@@ -1,0 +1,80 @@
+body,
+html {
+  height: 100%;
+  width:100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+/*固定する背景*/
+section {
+  box-sizing: border-box;
+//   color: #FFF;
+  font-size: 5rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+  height: 100%;
+//   padding: 5%;
+}
+.parallax-bg {
+  background-image: url('/assets/images/top-image-pc.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.parallax-bg-2 {
+    background-image: url('/assets/images/top-image-pc.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .info {
+        width:400px;
+        background:white;
+    }
+  }
+
+/*スクロールするコンテンツ*/
+.section01 {
+  background-color: #111;
+}
+
+.section02 {
+    background-color: rgba(255,0,0);
+}
+
+.section03 {
+    background-color:navy;
+}
+
+.section04 {
+    background-color:antiquewhite;
+}
+
+.section05 {
+    background-color:rebeccapurple;
+}
+
+.section06 {
+    background-color:yellow;
+}
+
+.section07 {
+    background-color:bisque;
+}
+
+
+
+
+
+  
+  
