@@ -4,14 +4,11 @@ html {
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  letter-spacing: 2px;
-  font-size: 10px;
 }
 
 /*固定する背景*/
 section {
   box-sizing: border-box;
-  font-size: 5rem;
   height: 100%;
 }
 
@@ -23,37 +20,131 @@ section {
   background-repeat: no-repeat;
 }
 
-.parallax-bg-2 {
-  background-image: url("/assets/images/top-image-pc.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.section02 {
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.parallax-bg-2 .info {
-  width: 400px;
+.section02 .info {
+  max-width: 450px;
+  width: 100%;
   background: white;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+.section02 .info p {
+  font-size: 20px;
+  text-align: center;
+}
+.section02 .info p span {
+  font-weight: bold;
+  color: #B91313;
+  font-size: 24px;
+}
+.section02 .info .btn {
+  width: 100%;
+}
+.section02 .info .btn .kmx-register {
+  font-size: 20px;
+  margin: 10px auto;
+  text-align: center;
+  background: #F26722;
+  color: #fff;
+}
+.section02 .info .btn .kmx-register:hover {
+  background: #fff;
+  border: 1px solid #F26722;
+  color: #F26722;
+}
+
+.top {
+  background-image: url("/assets/images/top-image-pc.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bottom {
+  background: #3e3e3e;
+  background: linear-gradient(0deg, #3e3e3e 0%, white 73%);
+}
+.bottom .container .row .video-iframe {
+  aspect-ratio: 16/9;
+}
+.bottom .container .row .text-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*スクロールするコンテンツ*/
-.section01 {
-  background-color: #111;
-}
-
-.section02 {
-  background-color: red;
-}
-
 .section03 {
-  background-color: navy;
+  background-color: #8fa2ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section03 .selling-point {
+  width: 83.33333%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.section03 .selling-point h1 {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.section03 .selling-point .main-points {
+  display: flex;
+  justify-content: space-between;
+}
+.section03 .selling-point .main-points .point {
+  width: 90%;
+  max-width: 420px;
+  border-radius: 0;
+  box-shadow: 13px 25px 12px rgba(0, 0, 0, 0.62);
+}
+.section03 .selling-point .main-points .point h4 {
+  margin-top: 3vh;
 }
 
 .section04 {
   background-color: antiquewhite;
+}
+.section04 .section04-01 {
+  padding-top: 6vh;
+}
+.section04 .section04-01 h4 {
+  text-align: center;
+}
+.section04 .section04-01 h4 span {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid;
+  margin: 0 10px 0 5px;
+}
+.section04 .section04-01 h4 span:before {
+  content: "​";
+  display: inline-block;
+  line-height: 0px;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  padding-left: 3px;
+}
+.section04 .section04-01 h4 span:after {
+  content: "​";
+  display: inline-block;
+  line-height: 0px;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  padding-right: 3px;
+}
+.section04 .section04-01 p {
+  text-align: center;
+  margin: 3vh auto;
+  line-height: 2em;
+  font-size: 1.25em;
 }
 
 .section05 {
