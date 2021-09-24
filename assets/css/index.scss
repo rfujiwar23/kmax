@@ -11,13 +11,15 @@ html {
   // font-size: 10px;
 }
 
+
+
 /*固定する背景*/
 section {
   box-sizing: border-box;
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
-  height: 100%;
+  
 //   padding: 5%;
 }
 .parallax-bg {
@@ -26,8 +28,83 @@ section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
+  height: 100%;
 }
+
+.parallax-bg-bottom {
+  position: relative;
+  background-image: url('/assets/images/top-image-pc.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  
+  .logo {
+    width:45%;
+    margin:0 auto;
+    padding:6vh 0 3vh;
+    h1 {
+      background:rgba(0,0,0,0.62);
+      padding:3vh 3vw;
+    }
+  }
+  .container {
+    h3 {
+      color:#F26722;
+      span {
+        background:rgba(0,0,0,0.62);
+      }
+    }
+    h6 {
+      font-size:1.5em;
+      span {
+        background:rgba(255,255,255,0.8);
+      }
+    }
+    .price {
+      
+      .price-t {
+        background:#8FA2AD;
+        color:white;
+        text-align: center;
+        padding:10px;
+      }
+      .price-b {
+        text-align:center;
+        background: rgba(255,255,255,1);
+        padding:3vh 0;
+      }
+    }
+  }
+  footer {
+    position:absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    display: flex;
+    justify-content: space-around;
+    background:white;
+    padding-top:5px;
+    .left {
+      ul {
+        list-style-type: none;
+        li {
+          display: inline-block;
+          margin-right:20px;
+        }
+      }
+    }
+    .middle {
+      font-size:1em;
+    }
+    .right {
+      font-size:1em;
+    }
+  }
+}
+
+
 
 .section02 {
     height:50%;
@@ -102,13 +179,15 @@ section {
 
 .section03 {
     background-color:$kMaxBlue;
+    // height: 100%;
+    
     display:flex;
     align-items: center;
     justify-content: center;
     .selling-point {
       width:83.33333%;
       max-width:1600px;
-      margin:0 auto;
+      margin:10vh auto;
       // background:$kmaxOrange;
       h1 {
         text-align: center;
@@ -131,11 +210,8 @@ section {
 }
 
 .section04 {
-    background-color:antiquewhite;
+    
     .section04-01 {
-      padding-top:6vh;
-      // position:relative;
-      // width:50%;
       h4 {
         text-align: center;  
         span {
@@ -164,29 +240,209 @@ section {
       }
       p {
         text-align: center;
-        margin:3vh auto;
-        line-height:2em;
+        // margin:3vh auto;
+        // line-height:2em;
         font-size:1.25em;
       }
-      
+    }
+    .section04-02 {
+      .categories {
+        padding:0 20px;
+        .category {
+          background:rgb(201,183,131);
+          padding:0;
+          
+          display: flex;
+          width:95%;
+          margin:5px auto;
+          
+          .category-image {
+            // width:40%;
+            img {
+              width:100%;
+            }
+          }
+          .category-text {
+            padding:10px 5px;
+            line-height:1em;
+            // width:60%;
+            h5 {
+              color:navy;
+              margin-bottom:10px;
+            }
+            p {
+              text-align: left;
+              line-height:1.25em;
+              font-size: 1em; 
+            }
+          }
+        }
+      }
     }
 }
 
 .section05 {
     background-color:rebeccapurple;
+    // padding:5vh auto;
+    // height: 100%;
+    .text {
+      h4 {
+        text-align: center;  
+        span {
+          display: inline-block;
+          border-radius: 50%;
+          border: 2px solid;
+          margin:0 10px 0 5px;
+          // font-size: 32px;
+          &:before {
+            content: '\200B';
+            display: inline-block;
+            line-height: 0px;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            padding-left: 3px;
+          }
+          &:after {
+            content: '\200B';
+            display: inline-block;
+            line-height: 0px;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            padding-right: 3px;
+          }
+        }
+      }
+    }
 }
 
 .section06 {
     background-color:yellow;
+    // height: 50%;
+    .container-fluid {
+      .view-settings {
+        margin:0 auto;
+      }
+    }
 }
 
 .section07 {
     background-color:bisque;
+    // height: 100%;
+    .text {
+      h4 {
+        text-align: center;  
+        span {
+          display: inline-block;
+          border-radius: 50%;
+          border: 2px solid;
+          margin:0 10px 0 5px;
+          // font-size: 32px;
+          &:before {
+            content: '\200B';
+            display: inline-block;
+            line-height: 0px;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            padding-left: 3px;
+          }
+          &:after {
+            content: '\200B';
+            display: inline-block;
+            line-height: 0px;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            padding-right: 3px;
+          }
+        }
+      }
+    }
+}
+
+.section08 {
+  .contents {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    .section08-text {
+      text-align:center;
+      // width:100%;
+      background:red;
+    }
+  }
 }
 
 
 
 
 
+
+
+
+
+@media screen and (max-width:768px) {
+  .parallax-bg, .top {
+    background-image: url('/assets/images/top-image-ph.png');
+  }
+}
   
-  
+
+@media screen and (max-width:520px) {
+  .section03 {
+    background-color:$kMaxBlue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    .selling-point {
+      width:83.33333%;
+      max-width:1600px;
+      margin:5vh auto 10vh;
+      // background:$kmaxOrange;
+      h1 {
+        text-align: center;
+        margin-bottom:90px;
+      }
+      .main-points {
+        display: flex;
+        flex-direction: column;
+        .point {
+          width:90%;
+          max-width:420px;
+          border-radius:0;
+          margin:2vh auto;
+          box-shadow:13px 25px 12px rgba(0,0,0,0.62);
+          h4 {
+            margin-top:3vh;
+          }
+        }
+      }
+    }
+    .section04 {
+      height:100%;
+    }
+  }
+  .section06 {
+    background-color:yellow;
+    padding:6vh 0;
+    .container-fluid {
+      .text {
+        margin-bottom:4vh;
+      }
+      .view-settings {
+        width:90%;
+        margin:10px auto;
+        p {
+          font-weight:bold;
+        }
+      }
+    }
+  }
+  .parallax-bg-bottom {
+    overflow-y: scroll;
+    .container {
+      .price {
+        width:75%;
+        margin:10px auto;
+      }
+    }
+  }
+}
