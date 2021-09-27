@@ -1,26 +1,12 @@
+var vm = new Vue({
+    el: '#points',
+    data: {
+      points: [
+        {title: '圧倒的な画質のクオリティ', body: '一流の技術を見逃さない為に、髪の毛一本一本を鮮明に捉える４Kカメラにて撮影。 また映像による学びのメリットを活かす為にマルチアングルを採用。正面、横、真上、 手元を４台のカメラで撮影して、全方向から技術を見ることが可能になります。', imgUrl: 'assets/images/kmx001.png'},
+        {title: '視聴者目線の映像配信', body: '1本の映像を全て3分以内のチャプターに分けて配信します。映像の視聴傾向として3分以内が最も見て もらえるというデーターを参考に、技術的な特徴から30〜60分と長尺になる映像を10〜20本にチャ プター化。休憩中や移動中、就寝前のちょっとした時間で視聴できる手軽な環境を提供しています。', imgUrl: 'assets/images/kmx002.png'},
+        {title: '世界中の美容師に教育環境を提供', body: '海外から日本のサイトにアクセスして活用して頂くのではなく、各国にサイトを設けて展開をしてい きます。それぞれの国の言語で字幕を入れてより多くの方々に利用してもらえる環境を整えてサービス を提供していきます。', imgUrl: 'assets/images/kmx003.png'},
 
-
-Vue.component('item-one', {
-   template: '<h2>KAMISMAX</h2>' 
-})
-
-var app = new Vue({
-    el: '#app'
-})
-
-
-Vue.component('item-two', {
-    template: '<h2>KAMISMAX</h2>' 
- })
- 
- var app = new Vue({
-     el: '#app2'
- })
-
- Vue.component('item-three', {
-    template: '<div><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<p></div>' 
- })
- 
- var app = new Vue({
-     el: '#app3'
- })
+      ]
+    }
+  });
+  

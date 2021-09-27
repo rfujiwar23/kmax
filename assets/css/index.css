@@ -174,8 +174,8 @@ section {
   justify-content: center;
 }
 .section03 .selling-point {
-  width: 83.33333%;
-  max-width: 1600px;
+  width: 100%;
+  max-width: 1440px;
   margin: 10vh auto;
 }
 .section03 .selling-point h1 {
@@ -188,7 +188,8 @@ section {
 }
 .section03 .selling-point .main-points .point {
   width: 90%;
-  max-width: 420px;
+  min-width: 256px;
+  max-width: 400px;
   border-radius: 0;
   box-shadow: 13px 25px 12px rgba(0, 0, 0, 0.62);
 }
@@ -196,16 +197,23 @@ section {
   margin-top: 3vh;
 }
 
-.section04 .section04-01 h4 {
+.section04 .section04-01 {
+  display: flex;
+  flex-direction: column;
+}
+.section04 .section04-01 .text {
+  padding: 4vh 0;
+}
+.section04 .section04-01 .text h4 {
   text-align: center;
 }
-.section04 .section04-01 h4 span {
+.section04 .section04-01 .text h4 span {
   display: inline-block;
   border-radius: 50%;
   border: 2px solid;
   margin: 0 10px 0 5px;
 }
-.section04 .section04-01 h4 span:before {
+.section04 .section04-01 .text h4 span:before {
   content: "​";
   display: inline-block;
   line-height: 0px;
@@ -213,7 +221,7 @@ section {
   padding-bottom: 50%;
   padding-left: 3px;
 }
-.section04 .section04-01 h4 span:after {
+.section04 .section04-01 .text h4 span:after {
   content: "​";
   display: inline-block;
   line-height: 0px;
@@ -221,7 +229,7 @@ section {
   padding-bottom: 50%;
   padding-right: 3px;
 }
-.section04 .section04-01 p {
+.section04 .section04-01 .text p {
   text-align: center;
   font-size: 1.25em;
 }
@@ -289,7 +297,8 @@ section {
 }
 
 .section07 {
-  background-color: bisque;
+  background-color: black;
+  color: #fff;
 }
 .section07 .text h4 {
   text-align: center;
@@ -316,6 +325,30 @@ section {
   padding-bottom: 50%;
   padding-right: 3px;
 }
+.section07 .curriculum {
+  color: #000;
+  background: #fff;
+  margin: 8vh auto;
+}
+.section07 .curriculum .drop-select .field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section07 .curriculum .display-contents .type {
+  background: #a8a088;
+  padding: 10px 20px;
+}
+.section07 .curriculum .display-contents h6 {
+  margin: 5vh 0 1vh;
+}
+.section07 .curriculum .display-contents .inner-text {
+  background: #fff;
+  padding: 5px;
+}
+.section07 .curriculum .display-contents.cut-tr-perm {
+  display: block;
+}
 
 .section08 .contents {
   display: flex;
@@ -327,9 +360,44 @@ section {
   background: red;
 }
 
+@media screen and (max-width: 1200px) {
+  .section03 .selling-point {
+    max-width: 1200px;
+    margin: 10vh 0;
+  }
+  .section03 .selling-point .main-points .point {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section03 .selling-point {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 10vh 0;
+  }
+  .section03 .selling-point .main-points .point h4 {
+    font-size: 1.1em;
+  }
+  .section03 .selling-point .main-points .point p {
+    font-size: 0.9em;
+  }
+}
 @media screen and (max-width: 768px) {
   .parallax-bg, .top {
     background-image: url("/assets/images/top-image-ph.png");
+  }
+
+  .section03 .selling-point h1 {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .section03 .selling-point .main-points {
+    display: flex;
+    flex-direction: column;
+  }
+  .section03 .selling-point .main-points .point {
+    margin: 2vh auto;
   }
 }
 @media screen and (max-width: 520px) {
@@ -341,7 +409,6 @@ section {
   }
   .section03 .selling-point {
     width: 83.33333%;
-    max-width: 1600px;
     margin: 5vh auto 10vh;
   }
   .section03 .selling-point h1 {
@@ -354,7 +421,6 @@ section {
   }
   .section03 .selling-point .main-points .point {
     width: 90%;
-    max-width: 420px;
     border-radius: 0;
     margin: 2vh auto;
     box-shadow: 13px 25px 12px rgba(0, 0, 0, 0.62);
