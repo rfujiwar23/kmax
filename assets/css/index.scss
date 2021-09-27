@@ -404,6 +404,11 @@ section {
     }
 }
 
+.modal {
+  // background-color: rgba(248, 131, 121,0.6);;
+  background-color: rgba(0,0,0,0.2);
+}
+
 .section07 {
     background-color:black;
     color:#fff;
@@ -444,6 +449,7 @@ section {
           text-decoration: underline;
           margin:9vh auto 4vh;
         }
+        
       }
       .curriculum {
         color:#000;

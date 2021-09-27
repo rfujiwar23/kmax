@@ -28,6 +28,9 @@
         }).change();
     });
     </script>
+    <script>
+      $('.modal-backdrop').remove();
+    </script>
     
 </head>
 
@@ -266,31 +269,93 @@
             <p>視聴した動画はウォッチマークを表示</p>
             <h6>会員ランク・取得カリキュラム・検定試験など各ディプロマが続々と登場！</h6>
           </div>
-          <div class="rank" id="rank">
+          <div class="rank">
             <h4 class="text-center">会員ランク</h4>
             <div class="row col-lg-6 offset-lg-3">
-              <div class="col-lg-6 col-md-6 col-sm-6" v-for="rank in rankings">
-                <img :src="rank.imgUrl" alt="rank.name" class="img-fluid my-2">
+              <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                <a data-bs-toggle="modal" data-bs-target="#Regular"><img src="assets/images/kmx019.png" alt="KAMISMAX REGUKAR" class="img-fluid"></a>
               </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+              <div class="modal fade" id="Regular" data-backdrop="false" data-bs-keyboard="true" tabindex="-1" aria-labelledby="RegularLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="RegularLabel">REGULAR</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">閉じる</button>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                <a data-bs-toggle="modal" data-bs-target="#Crystal"><img src="assets/images/kmx020.png" alt="KAMISMAX REGUKAR" class="img-fluid"></a>
+              </div>
+              <div class="modal fade" id="Crystal" data-backdrop="true" data-bs-keyboard="true" tabindex="-1" aria-labelledby="CrystalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="CrystalLabel">Crystal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Crystal
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                <a data-bs-toggle="modal" data-bs-target="#Sapphire"><img src="assets/images/kmx021.png" alt="KAMISMAX REGUKAR" class="img-fluid"></a>
+              </div>
+              <div class="modal fade" id="Sapphire" data-backdrop="true" data-bs-keyboard="true" tabindex="-1" aria-labelledby="SapphireLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="SapphireLabel">Sapphire</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Sapphire
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                <a data-bs-toggle="modal" data-bs-target="#Emerald"><img src="assets/images/kmx022.png" alt="KAMISMAX REGUKAR" class="img-fluid"></a>
+              </div>
+              <div class="modal fade" id="Emerald" data-backdrop="true" data-bs-keyboard="true" tabindex="-1" aria-labelledby="EmeraldLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="EmeraldLabel">Emerald</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Emerald
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
             </div>
+
+            
           </div>
 
           <div class="curriculum col-lg-8 offset-lg-2 p-3">
