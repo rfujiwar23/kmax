@@ -351,19 +351,9 @@ section {
 }
 
 .section06 {
-    background-color:yellow;
+    background-color:#8fa2ad;
+    padding:10vh 0;
     // height: 50%;
-    .container-fluid {
-      .view-settings {
-        margin:0 auto;
-      }
-    }
-}
-
-.section07 {
-    background-color:black;
-    color:#fff;
-    // height: 100%;
     .text {
       h4 {
         text-align: center;  
@@ -392,33 +382,97 @@ section {
         }
       }
     }
-    .curriculum {
-      color:#000;
-      background:#fff;
-      margin:8vh auto;
-      .drop-select {
+    .container-fluid {
+      .view-settings {
+        margin:7vh auto;
+        .text-above {
+          background:white;
+          p {
+            font-size:1em;
+            margin-bottom:3px;
+          }
+          h6 {
+            font-size:1.25em;
+            background:#1E456E;
+            padding: 10px 0;
+            color: #fff;
+            text-decoration: underline;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+}
 
-        .field {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+.section07 {
+    background-color:black;
+    color:#fff;
+    padding: 10vh 0;
+    // height: 100%;
+    .text {
+      margin-bottom:5vh;
+      h4 {
+        text-align: center;  
+        span {
+          display: inline-block;
+          border-radius: 50%;
+          border: 2px solid;
+          margin:0 10px 0 5px;
+          // font-size: 32px;
+          &:before {
+            content: '\200B';
+            display: inline-block;
+            line-height: 0px;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            padding-left: 3px;
+          }
+          &:after {
+            content: '\200B';
+            display: inline-block;
+            line-height: 0px;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            padding-right: 3px;
+          }
         }
       }
-      .display-contents {
-        .type {
-          background:rgb(168,160,136);
-          padding:10px 20px;
-        }
-        h6 {
-          margin: 5vh 0 1vh;
-        }
-        .inner-text {
-          background:#fff;
-          padding:5px;
+    }
+    .container {
+      .rank {
+        h4 {
+          text-decoration: underline;
+          margin:9vh auto 4vh;
         }
       }
-      .display-contents.cut-tr-perm {
-        display:block;
+      .curriculum {
+        color:#000;
+        background:#fff;
+        margin:8vh auto;
+        .drop-select {
+  
+          .field {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .display-contents {
+          .type {
+            background:rgb(168,160,136);
+            padding:10px 20px;
+          }
+          h6 {
+            margin: 5vh 0 1vh;
+          }
+          .inner-text {
+            background:#fff;
+            padding:5px;
+          }
+        }
+        .display-contents.cut-tr-perm {
+          display:block;
+        }
       }
     }
 }
@@ -453,6 +507,18 @@ section {
   }
 }
 
+@media screen and (max-width:1089px) {
+  .section06 {
+    .container-fluid {
+      .view-settings {
+        p {
+          font-size:0.8em;
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width:992px) {
   .section03 {
@@ -469,6 +535,15 @@ section {
           p {
             font-size:0.9em;
           }
+        }
+      }
+    }
+  }
+  .section06 {
+    .container-fluid {
+      .view-settings {
+        p {
+          font-size:1em;
         }
       }
     }

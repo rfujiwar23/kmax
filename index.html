@@ -59,6 +59,7 @@
       </div>
     </section>
     
+    <!-- 課題・会員登録の流れ -->
     
     <section class="section02 top">
       <div class="info" data-aos="fade-right">
@@ -220,32 +221,19 @@
         </div>
       </div>
     </section>
-    <!-- <section class="section05">
-      <div class="text">
-        <h4>特徴<span>１</span>豪華な出演者</h4>
-      <p>
-    </section> -->
+
     <section class="section06">
-      <div class="container-fluid">
+      <div class="container-fluid" id="videoEnvironment">
         <div class="text">
           <h4 class="text-center">特徴<span>３</span>豪華な出演者</h4>
         </div>
         <div class="row">
-          <div class="view-settings col-lg-3 col-md-6">
-            <p class="text-center">デジタルの可能性を最大に活用</p>
-            <img src="assets/images/kmx012.png" alt="Kamismax 画像" class="img-fluid">
-          </div>
-          <div class="view-settings col-lg-3 col-md-6">
-            <p class="text-center">圧倒的なクオリティで見る鮮明な映像</p>  
-            <img src="assets/images/kmx013.png" alt="Kamismax 画像" class="img-fluid">  
-          </div>
-          <div class="view-settings col-lg-3 col-md-6">
-            <p class="text-center">マルチアングル（多視点）で見たい視点が選択可能</p>
-            <img src="assets/images/kmx014.png" alt="Kamismax 画像" class="img-fluid">
-          </div>
-          <div class="view-settings col-lg-3 col-md-6">
-            <p class="text-center">髪の毛１本１本を鮮明に捉える4Kカメラで撮影</p>
-            <img src="assets/images/kmx015.png" alt="Kamismax 画像" class="img-fluid">
+          <div class="view-settings col-xl-3 col-lg-3 col-md-6 col-sm-6" v-for="image in pictureList" data-aos="fade-right">
+            <div class="text-above">
+              <p class="text-center">{{ image.text }}</p>
+              <h6 class="text-center">{{ image.text2 }}</h6>
+            </div>
+            <img :src="image.imgUrl" alt="image.alt" class="img-fluid">
           </div>
         </div>
       </div>
@@ -255,10 +243,10 @@
     <section class="section07">
       <div class="container-fluid">
         <div class="text">
-          <h4 class="text-center">特徴<span>３</span>豪華な出演者</h4>
+          <h4 class="text-center">特徴<span>４</span>豪華な出演者</h4>
         </div>
 
-        <div class="container">
+        <div class="container" >
           <div class="row col-lg-10 offset-lg-1 pc-only">
             <div class="col-lg-4 col-md-4">
               <img src="assets/images/kmx016.png" alt="KAMISMAX 動画画像" class="img-fluid">
@@ -278,24 +266,29 @@
             <p>視聴した動画はウォッチマークを表示</p>
             <h6>会員ランク・取得カリキュラム・検定試験など各ディプロマが続々と登場！</h6>
           </div>
-          <div class="rank">
-            <h4 class="center">会員ランク</h4>
-
-            
-
-
+          <div class="rank" id="rank">
+            <h4 class="text-center">会員ランク</h4>
             <div class="row col-lg-6 offset-lg-3">
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <img src="assets/images/kmx019.png" alt="KAMISMAX REGULAR 会員" class="img-fluid my-2">
+              <div class="col-lg-6 col-md-6 col-sm-6" v-for="rank in rankings">
+                <img :src="rank.imgUrl" alt="rank.name" class="img-fluid my-2">
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <img src="assets/images/kmx020.png" alt="KAMISMAX CRYSTAL 会員" class="img-fluid my-2">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <img src="assets/images/kmx021.png" alt="KAMISMAX SAPPHIRE 会員" class="img-fluid my-2">
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-6">
-                <img src="assets/images/kmx022.png" alt="KAMISMAX EMERALD 会員" class="img-fluid my-2">
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -439,7 +432,7 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <img src="assets/images/kmx015.png" alt="KAMISMAX 画像">
+            <img src="assets/images/kmx015.png" alt="KAMISMAX 画像" class="img-fluid">
           </div>
         </div>
       </div>
