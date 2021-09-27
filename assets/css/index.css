@@ -18,6 +18,28 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax-bg .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.parallax-bg .top-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax-bg .top-wrapper .top-title .text-space {
+  margin-top: 5vh;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 2em;
+  padding: 4vh 0;
 }
 
 .parallax-bg-bottom {
@@ -365,6 +387,14 @@ section {
   .parallax-bg-bottom .container .price {
     width: 75%;
     margin: 10px auto;
+  }
+  .parallax-bg-bottom footer {
+    margin-top: 10vh;
+    position: relative;
+    flex-direction: column;
+  }
+  .parallax-bg-bottom footer .left, .parallax-bg-bottom footer .right, .parallax-bg-bottom footer .middle {
+    text-align: center;
   }
 }
 
