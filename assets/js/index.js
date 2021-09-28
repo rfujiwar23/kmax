@@ -28,11 +28,50 @@ var vm = new Vue({
     el: '#rank',
     data: {
       rankings: [
-       {imgUrl: 'assets/images/kmx019.png', name: 'KAMISMAX REGULAR', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'},
-       {imgUrl: 'assets/images/kmx020.png', name: 'KAMISMAX CRYSTAL', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'},
-       {imgUrl: 'assets/images/kmx021.png', name: 'KAMISMAX SAPPHIRE', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト' },
-       {imgUrl: 'assets/images/kmx022.png', name: 'KAMISMAX EMERALD', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト' },
+       {id:1, imgUrl: 'assets/images/kmx019.png', name: 'REGULAR', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'},
+       {id:2, imgUrl: 'assets/images/kmx020.png', name: 'CRYSTAL', body: 'テッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリ'},
+       {id:3, imgUrl: 'assets/images/kmx021.png', name: 'SAPPHIRE', body: 'テキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウ' },
+       {id:4, imgUrl: 'assets/images/kmx022.png', name: 'EMERALD', body: 'テキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキ' },
     
       ]
     }
+});
+
+var vm = new Vue({
+  el: '#tabletUp',
+  data: {
+    images: [
+     {imgUrl: 'assets/images/kmx016.png', name: 'KAMISMAX 画像'},
+     {imgUrl: 'assets/images/kmx017.png', name: 'KAMISMAX 画像'},
+     {imgUrl: 'assets/images/kmx018.png', name: 'KAMISMAX 画像'},
+    ]
+  }
+});
+
+var vm = new Vue({
+  el: '#stamps',
+  data: {
+    stampList: [
+     {id:1, imgUrl: 'assets/images/001-trend-cut1.png', name: 'CUT', type: 'Trend', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'},
+     {id:2, imgUrl: 'assets/images/002-study-cut.png', name: 'CUT', type: 'Study', body: 'テッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリ'},
+     {id:3, imgUrl: 'assets/images/003-trend-cut2.png', name: 'CUT', type: 'Trend', body: 'テキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウ'},
+     {id:4, imgUrl: 'assets/images/004-study-color.png', name: 'COLOR', type: 'Trend', body: 'テキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキ'},
+     {id:5, imgUrl: 'assets/images/005-trend-perm.png', name: 'PERM', type: 'Study', body: 'テキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウ'},
+    ]
+  }
+});
+
+var vm = new Vue({
+  el: '#program',
+  data: {
+    categories: [
+     {imgUrl:'assets/images/kmx005.png', body: 'トレンドスタイルや最新テクニックをご紹介',  title: 'トレンド'},
+     {imgUrl:'assets/images/kmx006.png', body: 'ベーシック技術や理論などの学びをご提供',  title: 'スタディ'},
+     {imgUrl:'assets/images/kmx007.png', body: 'インタビューや密着など「リアルを配信」',  title: 'リアリティ'},
+     {imgUrl:'assets/images/kmx008.png', body: 'ヘアショーやイベント映像を配信',  title: 'エンターテインメント'},
+     {imgUrl:'assets/images/kmx009.png', body: '感性を刺激する特別な映像っを配信',  title: 'スペシャル'},
+     {imgUrl:'assets/images/kmx010.png', body: 'KAMI CHARISMAの授賞式等の関連画像を紹介',  title: 'カミカリスマ'},
+     {imgUrl:'assets/images/kmx011.png', body: '色々な企画の対談やバトルなどを配信',  title: 'バラエティ'},
+    ]
+  }
 });
