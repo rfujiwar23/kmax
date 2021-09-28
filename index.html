@@ -159,7 +159,7 @@ $(function(){
            
             
             <div class="categories gx-0 px-3 row" id="program">
-              <div class="col-md-6 mb-4" v-for="category in categories">
+              <div class="outer col-md-6 col-sm-9 mb-4" v-for="category in categories">
                 <div class="category row">
                   <div class="category-overlay"></div>
                   <div class="category-image col-3">
@@ -198,7 +198,7 @@ $(function(){
               <p class="text-center">{{ image.text }}</p>
               <h6 class="text-center">{{ image.text2 }}</h6>
             </div>
-            <img :src="image.imgUrl" alt="image.alt" class="img-fluid">
+            <img :src="image.imgUrl" :alt="image.alt" class="img-fluid">
           </div>
         </div>
       </div>
@@ -212,9 +212,9 @@ $(function(){
         </div>
 
         <div class="container" id="tabletUp">
-          <div class="row col-lg-10 offset-lg-1 pc-only">
+          <div class="row col-lg-10 offset-lg-1 col-sm-10 offset-sm-1 col-10 offset-1 pc-only">
             <div class="col-lg-4 col-md-4" v-for="image in images">
-              <img :src="image.imgUrl" alt="image.name" class="img-fluid">
+              <img :src="image.imgUrl" :alt="image.name" class="img-fluid">
             </div>
             
           </div>
@@ -225,17 +225,20 @@ $(function(){
 
           </div>
 
-          <div class="text text-center">
+          <div class="text text-center mt-5">
             <h5>履歴状況が一眼で分かるので、学習意欲を掻きたてます</h5>
             <p>視聴した動画はウォッチマークを表示</p>
             <h6>会員ランク・取得カリキュラム・検定試験など各ディプロマが続々と登場！</h6>
           </div>
           <div class="rank" id="rank">
             <h4 class="text-center">会員ランク</h4>
-            <div class="row col-lg-6 offset-lg-3">
-              <div class="col-lg-6 col-md-6 col-sm-6 mb-3" v-for="rank in rankings">
-                <a data-html="true" data-placement="top" :data-popover-content="'#a'+rank.id" data-toggle="popover" data-trigger="focus" tabindex="0">
-                  <img :src="rank.imgUrl" alt="rank.name" class="img-fluid"></a> 
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 mb-3 mx-auto" v-for="rank in rankings">
+                <div class="text-center">
+                  <a data-html="true" data-placement="top" :data-popover-content="'#a'+rank.id" data-toggle="popover" data-trigger="focus" tabindex="0">
+                    <img :src="rank.imgUrl" :alt="rank.name" class="img-fluid">
+                  </a> 
+                </div>
                 <!-- Content for Popover -->
                 <div class="hidden d-none" :id="'a'+rank.id">
                   <div class="popover-heading">

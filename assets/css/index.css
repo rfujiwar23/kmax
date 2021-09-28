@@ -275,6 +275,9 @@ section {
 .section04 .columns-wrapper .column .category {
   background: #c9b783;
   position: relative;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.62);
 }
 .section04 .columns-wrapper .column .category .category-overlay {
   position: absolute;
@@ -549,6 +552,17 @@ section {
     font-size: 1em;
   }
 }
+@media screen and (max-width: 992px) {
+  .section04 .columns-wrapper .column .container .category .category-text {
+    padding: 5px 10px 0;
+  }
+  .section04 .columns-wrapper .column .container .category .category-text h5 {
+    font-size: 0.9em;
+  }
+  .section04 .columns-wrapper .column .container .category .category-text p {
+    font-size: 0.75em;
+  }
+}
 @media screen and (max-width: 768px) {
   .parallax-bg, .top {
     background-image: url("/assets/images/top-image-ph.png");
@@ -564,6 +578,31 @@ section {
   }
   .section03 .selling-point .main-points .point {
     margin: 2vh auto;
+  }
+
+  .section04 .columns-wrapper .column .container .outer {
+    margin: 0 auto;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text {
+    padding: 20px;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
+    font-size: 1.25em;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text p {
+    padding: 0;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 532px) {
+  .section04 .columns-wrapper .column .container .outer .category .category-text {
+    padding: 10px;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
+    font-size: 1.1em;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text p {
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width: 520px) {
@@ -594,8 +633,9 @@ section {
   .section03 .selling-point .main-points .point h4 {
     margin-top: 3vh;
   }
-  .section03 .section04 {
-    height: 100%;
+
+  .section04 .columns-wrapper .column h6 {
+    font-size: 1em;
   }
 
   .section06 {
@@ -627,6 +667,76 @@ section {
   }
   .parallax-bg-bottom footer .left, .parallax-bg-bottom footer .right, .parallax-bg-bottom footer .middle {
     text-align: center;
+  }
+}
+@media screen and (max-width: 440px) {
+  .br_on {
+    display: block;
+  }
+
+  .section04 .columns-wrapper .column .container .category .category-text {
+    padding: 10px 10px 0;
+  }
+  .section04 .columns-wrapper .column .container .category .category-text p {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  .section04 .columns-wrapper .column .container .outer .category .category-text {
+    padding: 10px 10px 0;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
+    font-size: 1.1em;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 424px) {
+  .section04 .columns-wrapper .column .container .outer .category .category-text {
+    padding: 8px 8px 0;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
+    font-size: 1.1em;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text p {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section04 .columns-wrapper .column .container .outer .category .category-text {
+    padding: 5px 5px 0;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
+    font-size: 1em;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text p {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section02 .info p {
+    font-size: 16px;
+  }
+  .section02 .info p span {
+    font-size: 1.25em;
+  }
+
+  .section03 .selling-point h1 {
+    font-size: 1.5em;
+  }
+
+  .section04 .columns-wrapper .column h4 {
+    font-size: 1.25em;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text {
+    padding: 5px 5px 0;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
+    font-size: 1em;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text p {
+    font-size: 0.6em;
   }
 }
 
