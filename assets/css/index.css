@@ -14,6 +14,11 @@ html {
   display: none;
 }
 
+.white-out {
+  color: white;
+  user-select: none;
+}
+
 /* Popover */
 .popover {
   border: 2px dotted red;
@@ -40,7 +45,7 @@ section {
 }
 
 .parallax-bg {
-  background-image: url("/assets/images/top-image-pc.png");
+  background-image: url("/assets/images/top-image-pc.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -72,7 +77,7 @@ section {
 
 .parallax-bg-bottom {
   position: relative;
-  background-image: url("/assets/images/top-image-pc.png");
+  background-image: url("/assets/images/top-image-pc.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -121,6 +126,7 @@ section {
   justify-content: space-around;
   background: white;
   padding-top: 5px;
+  font-size: 12px;
 }
 .parallax-bg-bottom footer .left ul {
   list-style-type: none;
@@ -128,12 +134,6 @@ section {
 .parallax-bg-bottom footer .left ul li {
   display: inline-block;
   margin-right: 20px;
-}
-.parallax-bg-bottom footer .middle {
-  font-size: 1em;
-}
-.parallax-bg-bottom footer .right {
-  font-size: 1em;
 }
 
 .section02 {
@@ -175,7 +175,7 @@ section {
 }
 
 .top {
-  background-image: url("/assets/images/top-image-pc.png");
+  background-image: url("/assets/images/top-image-pc.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -684,7 +684,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   .parallax-bg, .top {
-    background-image: url("/assets/images/top-image-ph.png");
+    background-image: url("/assets/images/top-image-ph.jpg");
   }
 
   .section02 .text-area {
