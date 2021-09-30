@@ -1,3 +1,5 @@
+// const { default: Vue } = require("vue");
+
 var vm = new Vue({
     el: '#points',
     data: {
@@ -72,6 +74,20 @@ var vm = new Vue({
      {imgUrl:'assets/images/kmx009.png', body: '感性を刺激する特別な映像っを配信',  title: 'スペシャル'},
      {imgUrl:'assets/images/kmx010.png', body: 'KAMI CHARISMAの授賞式等の関連画像を紹介',  title: 'カミカリスマ'},
      {imgUrl:'assets/images/kmx011.png', body: '色々な企画の対談やバトルなどを配信',  title: 'バラエティ'},
+    ]
+  }
+});
+
+
+var vm = new Vue({
+  el: '#solution',
+  data: {
+    solutions: [
+      {id: 1, text: '動画配信サービスが他業界に比べて充実していない'},
+      {id: 2, text: '講師のキャスティングに魅力が欠けている'},
+      {id: 3, text: 'エンターテイメント性が乏しい'},
+      {id: 4, text: '動画の質（構成・カメラワーク等）が低い'},
+      {id: 5, text: '料金負担が大きい'},
     ]
   }
 });

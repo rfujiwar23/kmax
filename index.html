@@ -108,9 +108,67 @@ $(function(){
             </div>
           </div>
           <div class="col-lg-6 col-md-6 video-iframe bg-primary">
-
+            <video controlslist="nodownload" muted autoplay loop playsinline>
+              <source src="assets/images/intro-video.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section09">
+      
+        
+          <div class="sect09-sect text-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('assets/images/kmx-img001.jpg');">
+            <div class="overlay-text">
+              <h3><span class="the-task">美容業界における教育の課題</span></h3>
+              <p>就職したサロンの教育力で、自身の将来像が変わる</p>
+              <p>労働環境が見直されたことで、レッスン日が減少</p>
+              <p>フリーランスの増加等、多様化する働き方</p>
+              <p>技術力やデザイン力が、就職・転職に繋がらない</p>
+            </div>
+          </div>
+          <div class="sect09-sect text-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('assets/images/kmx-img002.jpg');">
+            <div class="overlay-text">
+              <h3><span class="the-japan">日本が持つ世界最高レベルの技術</span></h3>
+              <p>教育の力で発信</h4>
+              <p>オンライン教育動画配信サービス</p>
+              <p>次代に向けた<span class="p-top">新しい教育環境</span>を提供する<br><span class="p-bottom">独自のプラットフォーム</span>を開発</p>
+
+              <h5 class="my-5">それが…</h5>
+
+              <h1 data-aos="fade-up-right" data-aos-duration="6000"><img src="assets/images/kmax-logo@2x.png" alt="KAMISMAX" class="img-fluid p-4"></h1>
+            </div>
+          </div>
+        
+        
+        
+      
+    </section>
+
+    <section class="section10">
+      <div class="sect10-top-strip">
+        <h2><span>【美容業界の動画配信市場】</span></h2>
+      </div>
+      <div class="container">
+        <div class="col-lg-6 offset-lg-3" id="solution">
+          <ul v-for="solution in solutions">
+            <!-- <li>
+            </li>
+            <li>講師のキャスティングに魅力が欠けている
+            </li>
+            <li>エンターテイメント性が乏しい　
+            </li>
+            <li>動画の質（構成・カメラワーク等）が低い
+            </li>
+            <li>料金負担が大きい</li> -->
+            <li data-aos="fade-up-right"><span>{{solution.id }}.</span> {{solution.text}}</li>
+          </ul>
+          
+        </div>
+
+        <p class="text-center mt-5 mb-3">視聴対象者（潜在需要）は非常に多く<br>
+          <span>「未開拓」</span>で<span>「圧倒的な顧客数」</span>の獲得が見込める市場</p>
       </div>
     </section>
 
@@ -158,10 +216,10 @@ $(function(){
             </h6>
            
             
-            <div class="categories gx-0 px-3 row" id="program">
+            <div class="categories gx-0 row" id="program">
               <div class="outer col-md-6 col-sm-9 mb-4" v-for="category in categories">
-                <div class="category row">
-                  <div class="category-overlay"></div>
+                <div class="category row" data-aos="fade-up">
+                  <!-- <div class="category-overlay"></div> -->
                   <div class="category-image col-3">
                     <img :src="category.imgUrl" alt="KAMISMAX" class="img-fluid">
                   </div>
@@ -223,17 +281,17 @@ $(function(){
            
 
 
-          </div>
+          </div> 
 
           <div class="text text-center mt-5">
-            <h5>履歴状況が一眼で分かるので、学習意欲を掻きたてます</h5>
+            <h5>履歴状況が一眼で分かるので、<br class="br_on_500">学習意欲を掻きたてます</h5>
             <p>視聴した動画はウォッチマークを表示</p>
-            <h6>会員ランク・取得カリキュラム・検定試験など各ディプロマが続々と登場！</h6>
+            <h6>会員ランク・取得カリキュラム・検定試験など<br class="br_on_500">各ディプロマが続々と登場！</h6>
           </div>
           <div class="rank" id="rank">
             <h4 class="text-center">会員ランク</h4>
             <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-6 mb-3 mx-auto" v-for="rank in rankings">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-6 mb-3 mx-auto" v-for="rank in rankings">
                 <div class="text-center">
                   <a data-html="true" data-placement="top" :data-popover-content="'#a'+rank.id" data-toggle="popover" data-trigger="focus" tabindex="0">
                     <img :src="rank.imgUrl" :alt="rank.name" class="img-fluid">
@@ -257,24 +315,26 @@ $(function(){
 
           <div class="curriculum col-lg-8 offset-lg-2 p-3">
             <div class="row">
-              <div class="col-lg-6 drop-select">
-                <h5 class="text-center">カリキュラム</h5>
+              <div class="col-lg-6 col-md-6 col-sm-6 drop-select">
+                
                 <div class="field">
-                 
+                  <h5 class="text-center">カリキュラム<br><span>選択してください</span></h5>
+                  
                   <select>
-                      <option>Choose Color</option>
+                      <!-- <option>Choose Color</option> -->
                       <option value="color-tr-perm">COLOR/TREATMENT/PERM</option>
                       <option value="cut">CUT</option>
                       <option value="knowledge">KNOWLEDGE</option>
-                      <option value="makeup">MAKE-UP</option>
+                      <option value="make-up">MAKE-UP</option>
                       <option value="other">OTHER</option>
                       <option value="special">SPECIAL</option>
                   </select>
                 </div>
               </div>
-              <div class="col-lg-6 display-contents">
+              <div class="col-lg-6 col-md-6 col-sm-6 display-contents">
+
                 <div class="color-tr-perm type">
-                  <div class="col-6 offset-3">`
+                  <div class="col-6 offset-3 stamp">`
                     <img src="assets/images/kmx-stamp-001-adv.png" alt="KAMISMAX Stamp" class="img-fluid">
                   </div>
                   <h6>COLOR/TR/PERM</h6>
@@ -282,72 +342,72 @@ $(function(){
                     <p>テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
-                      テキストテキストテキストテキストテキストテキストテキスト
+                      テキストテキストテキストテキストテキストテキストテキスト（120文字以下）
                     </p>
                   </div>
                 </div>
                 <div class="cut type">
-                  <div class="col-6 offset-3">`
+                  <div class="col-6 offset-3 stamp">`
                     <img src="assets/images/kmx-stamp-002-adv.png" alt="KAMISMAX Stamp" class="img-fluid">
                   </div>
-                  <h6>COLOR/TR/PERM</h6>
+                  <h6>CUT</h6>
                   <div class="inner-text">
                     <p>テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
-                      テキストテキストテキストテキストテキストテキストテキスト
+                      テキストテキストテキストテキストテキストテキストテキスト（120文字以下）
                     </p>
                   </div>
                 </div>
                 <div class="knowledge type">
-                  <div class="col-6 offset-3">`
+                  <div class="col-6 offset-3 stamp">`
                     <img src="assets/images/kmx-stamp-003-adv.png" alt="KAMISMAX Stamp" class="img-fluid">
                   </div>
-                  <h6>COLOR/TR/PERM</h6>
+                  <h6>KNOWLEDGE</h6>
                   <div class="inner-text">
                     <p>テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
-                      テキストテキストテキストテキストテキストテキストテキスト
+                      テキストテキストテキストテキストテキストテキストテキスト（120文字以下）
                     </p>
                   </div>
                 </div>
-                <div class="makeup type">
-                  <div class="col-6 offset-3">`
+                <div class="make-up type">
+                  <div class="col-6 offset-3 stamp">`
                     <img src="assets/images/kmx-stamp-004-adv.png" alt="KAMISMAX Stamp" class="img-fluid">
                   </div>
-                  <h6>COLOR/TR/PERM</h6>
+                  <h6>MAKE-UP</h6>
                   <div class="inner-text">
                     <p>テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
-                      テキストテキストテキストテキストテキストテキストテキスト
+                      テキストテキストテキストテキストテキストテキストテキスト（120文字以下）
                     </p>
                   </div>
                 </div>
                 <div class="other type">
-                  <div class="col-6 offset-3">`
+                  <div class="col-6 offset-3 stamp">`
                     <img src="assets/images/kmx-stamp-005.png" alt="KAMISMAX Stamp" class="img-fluid">
                   </div>
-                  <h6>COLOR/TR/PERM</h6>
+                  <h6>OTHER</h6>
                   <div class="inner-text">
                     <p>テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
-                      テキストテキストテキストテキストテキストテキストテキスト
+                      テキストテキストテキストテキストテキストテキストテキスト（120文字以下）
                     </p>
                   </div>
                 </div>
                 <div class="special type">
-                  <div class="col-6 offset-3">`
+                  <div class="col-6 offset-3 stamp">`
                     <img src="assets/images/kmx-stamp-006.png" alt="KAMISMAX Stamp" class="img-fluid">
                   </div>
-                  <h6>COLOR/TR/PERM</h6>
+                  <h6>SPECIAL</h6>
                   <div class="inner-text">
                     <p>テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
                       テキストテキストテキストテキストテキストテキストテキスト
-                      テキストテキストテキストテキストテキストテキストテキスト
+                      テキストテキストテキストテキストテキストテキストテキスト（120文字以下）
                     </p>
                   </div>
                 </div>
@@ -360,7 +420,7 @@ $(function(){
 
           <div class="py-5 certificate col-lg-10 offset-lg-1 col-md-10 offset-md-1" id="stamps">
             <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-4" v-for="stamp in stampList">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-6" v-for="stamp in stampList">
                 
                 <a data-html="true" data-placement="top" 
                   :data-popover-content="'#b'+stamp.id" 
@@ -384,20 +444,25 @@ $(function(){
     </section>
 
 
-    <section class="section08 bg-primary">
-      <div class="container bg-secondary">
+    <section class="section08 py-5">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="section08-text col-lg-6 offset-lg-3">
-              <h5>どのデバイスでも対応！
-                スマホに対応しているので
-                通勤や移動中にでも視聴可能！</h5>
+          <div class="col-lg-6 my-auto">
+            <div class="section08-text">
+              <div class="text">
+                <h4>どのデバイスでも対応！<br>
+                  スマホに対応しているので<br>
+                  通勤や移動中にでも視聴可能！</h4>
+              </div>
   
               <!-- <h5>通勤中に独学しちゃおう！</h5> -->
             </div>
           </div>
           <div class="col-lg-6">
-            <img src="assets/images/kmx015.png" alt="KAMISMAX 画像" class="img-fluid">
+            <!-- <img src="assets/images/kmx015.png" alt="KAMISMAX 画像" class="img-fluid"> -->
+            <div class="video-iframe">
+              <video muted playsinline controls controlslist><source src="assets/images/intro-video.mp4" type="video/mp4"></video>
+            </div>
           </div>
         </div>
       </div>
@@ -410,7 +475,7 @@ $(function(){
       <div class="container">
         <h3 class="text-center"><span class="p-2">サービスプラン</span></h3>
         <h6 class="text-center my-5"><span class="p-3">サブスク一般会員　全ての番組が視聴可能</span></h6>
-        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 price flex" data-aos="fade-in">
               <div class="price-t">
