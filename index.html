@@ -14,6 +14,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
     <script>
     $(document).ready(function(){
         $("select").change(function(){
@@ -107,7 +111,7 @@ $(function(){
               <h5>モチベーションをアップさせたい</h5>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 video-iframe bg-primary">
+          <div class="col-lg-6 col-md-6 video-iframe" data-aos="fade-left">
             <video controlslist="nodownload" muted autoplay loop playsinline>
               <source src="assets/images/intro-video.mp4" type="video/mp4">
             </video>
@@ -151,7 +155,7 @@ $(function(){
         <h2><span>【美容業界の動画配信市場】</span></h2>
       </div>
       <div class="container">
-        <div class="col-lg-6 offset-lg-3" id="solution">
+        <div class="col-lg-8 offset-lg-2" id="solution">
           <ul v-for="solution in solutions">
             <!-- <li>
             </li>
@@ -318,7 +322,8 @@ $(function(){
               <div class="col-lg-6 col-md-6 col-sm-6 drop-select">
                 
                 <div class="field">
-                  <h5 class="text-center">カリキュラム<br><span>選択してください</span></h5>
+                  <h5 class="text-center p-2">カリキュラム</h5>
+                  <p class="text-center p-2">洗濯してください <i class="fas fa-angle-down"></i></p>
                   
                   <select>
                       <!-- <option>Choose Color</option> -->

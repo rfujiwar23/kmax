@@ -111,8 +111,9 @@ section {
       }
     }
     h6 {
-      font-size:1.5em;
+      // font-size:1.5em;
       span {
+        font-size: 1.5em;
         background:rgba(255,255,255,0.8);
       }
     }
@@ -506,9 +507,15 @@ section {
               background:#A8A088;
               padding:5px;
               color:#fff;
+              margin:0;
               span {
                 font-size:0.8em;
               }
+            }
+            p {
+              border-left: #9a9a9a 1px solid;
+              border-bottom: #9a9a9a 1px solid;
+              border-right: #9a9a9a 1px solid;
             }
           }
         }
@@ -516,13 +523,15 @@ section {
           // height:100%;
           .type {
             background:rgb(168,160,136);
+            border-radius: 5px;
+            box-shadow: 1px 3px 5px rgba(0,0,0,0.62);
             padding:10px 20px;
             z-index: 5;
             .stamp {
               background:#fff;
               border-radius: 10%;
               padding:20px;
-              box-shadow: 3px 3px 6px rgba(0,0,0,0.62);
+              // box-shadow: 3px 3px 6px rgba(0,0,0,0.62);
             }
           }
           h6 {
@@ -629,6 +638,8 @@ section {
       li {
         font-size: 1.25em;
         line-height: 1.5em;
+        padding-bottom:3px;
+        border-bottom: 1px dotted #9a9a9a;
         // text-align: center;
         span {
           font-weight: bold;
@@ -750,7 +761,7 @@ section {
       }
       h6 {
         span {
-          font-size:0.9em;
+          font-size:1.25em;
         }
       }
     }
@@ -905,7 +916,7 @@ section {
       }
       h6 {
         span {
-          font-size:0.7em;
+          font-size:1.1em;
         }
       }
     }
@@ -1040,9 +1051,16 @@ section {
   .parallax-bg-bottom {
     overflow-y: scroll;
     .container {
+      padding-left: 0;
+      padding-right: 0;
       .price {
         width:75%;
         margin:10px auto;
+      }
+      h6 {
+        span {
+          font-size: 1em;
+        }
       }
     }
     footer {
@@ -1149,6 +1167,16 @@ section {
       }
     }
   }
+
+  .parallax-bg-bottom {
+    .container {
+      h6 {
+        span {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width:424px) {
@@ -1172,9 +1200,17 @@ section {
         }
       }
     }
-  }
+  } 
+}
 
-  
+@media screen and (max-width:414px) {
+  .parallax-bg-bottom {
+    .container {
+      h6 {
+
+      }
+    }
+  }
 }
 
 @media screen and (max-width:400px) {
@@ -1255,6 +1291,16 @@ section {
         }
         p {
           font-size: 0.9em;
+        }
+      }
+    }
+  }
+
+  .parallax-bg-bottom {
+    .container {
+      h6 {
+        span {
+          font-size:0.7em;
         }
       }
     }
