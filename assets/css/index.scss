@@ -53,7 +53,7 @@ section {
 //   padding: 5%;
 }
 .parallax-bg {
-  background-image: url('/assets/images/top-image-pc.jpg');
+  background-image: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -92,7 +92,7 @@ section {
 
 .parallax-bg-bottom {
   position: relative;
-  background-image: url('/assets/images/top-image-pc.jpg');
+  background-image: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -205,7 +205,7 @@ section {
 }
 
 .top {
-  background-image: url('/assets/images/top-image-pc.jpg');
+  background-image: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -857,7 +857,7 @@ section {
 
 @media screen and (max-width:768px) {
   .parallax-bg, .top {
-    background-image: url('/assets/images/top-image-ph.jpg');
+    background-image: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg');
   }
 
   .section02 {
