@@ -70,10 +70,10 @@ var vm = new Vue({
      {imgUrl:'assets/images/kmx005.png', body: 'トレンドスタイルや最新テクニックをご紹介',  title: 'トレンド'},
      {imgUrl:'assets/images/kmx006.png', body: 'ベーシック技術や理論などの学びをご提供',  title: 'スタディ'},
      {imgUrl:'assets/images/kmx007.png', body: 'インタビューや密着など「リアルを配信」',  title: 'リアリティ'},
+     {imgUrl:'assets/images/kmx011.png', body: '色々な企画の対談やバトルなどを配信',  title: 'バラエティ'},
      {imgUrl:'assets/images/kmx008.png', body: 'ヘアショーやイベント映像を配信',  title: 'エンターテインメント'},
      {imgUrl:'assets/images/kmx009.png', body: '感性を刺激する特別な映像っを配信',  title: 'スペシャル'},
      {imgUrl:'assets/images/kmx010.png', body: 'KAMI CHARISMAの授賞式等の関連画像を紹介',  title: 'カミカリスマ'},
-     {imgUrl:'assets/images/kmx011.png', body: '色々な企画の対談やバトルなどを配信',  title: 'バラエティ'},
     ]
   }
 });

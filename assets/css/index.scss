@@ -9,6 +9,7 @@ html {
   margin: 0 auto;
   // letter-spacing: 2px;
   // font-size: 10px;
+  // overflow-x: hidden;
 }
 
 .br_on {
@@ -57,8 +58,9 @@ section {
 //   padding: 5%;
 }
 .parallax-bg {
-  background: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg');
-  background-attachment: fixed;
+  // background: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg');
+  background:#1E456E;
+  // background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,11 +86,12 @@ section {
       
       .text-space {
         margin-top:5vh;
-        background:rgba(255,255,255,0.9);
+        // background:rgba(255,255,255,0.9);
         font-size:1.25em;
         font-weight:bold;
         line-height: 2em;
         padding:4vh 0;
+        color:white;
       }
     }
   }
@@ -97,7 +100,7 @@ section {
 .parallax-bg-bottom {
   position: relative;
   background: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg');
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,7 +180,7 @@ section {
     .info {
         max-width:450px;
         width:100%;
-        background:white;
+        background:rgba(255,255,255,0.8);
         padding:20px 10px;
         border-radius:5px;
         p {
@@ -210,7 +213,7 @@ section {
 
 .top {
     background: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg');
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -245,7 +248,7 @@ section {
 
 
 .section03 {
-    background-color:$kMaxBlue;
+    background-color:#676e72;
     // height: 100%;
     
     display:flex;
@@ -877,8 +880,17 @@ section {
     }
   }
   
-  .parallax-bg, .top {
+  .top {
     background: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg');
+    // background:#1E456E;
+    // background-color:#1E456E;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .parallax-bg-bottom {
+    background: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg');
+    // background:#1E456E;
     // background-color:#1E456E;
     background-position: center;
     background-size: cover;
@@ -913,7 +925,7 @@ section {
             margin:0 auto;
             .category {
               .category-text {
-                padding:20px;
+                padding:12px;
                 h5 {
                   font-size: 1.25em;
                 }
@@ -958,6 +970,20 @@ section {
   }
 }
 
+@media screen and (max-width:576px) {
+  .parallax-bg-bottom {
+    overflow-y: scroll;
+    footer {
+      margin-top:10vh;
+      position:relative;
+      flex-direction: column;
+      .left, .right, .middle {
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media screen and (max-width:532px) {
   .section04 {
     .columns-wrapper {
@@ -989,8 +1015,18 @@ section {
     display: block;
   }
 
+  .section02 {
+    padding:40px 10px;
+    .info {
+      max-width: 450px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px 10px;
+      border-radius: 5px;
+    }
+  }
+
   .section03 {
-    background-color:$kMaxBlue;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -1109,6 +1145,18 @@ section {
   }
 }
 
+@media screen and (max-width:466px) {
+  .parallax-bg-bottom {
+    .container {
+      h6 {
+        span {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width:444px) {
   .br_on {
     display: block;
@@ -1161,6 +1209,18 @@ section {
 }
 
 @media screen and (max-width:430px) {
+
+  .section02 {
+    .info {
+      p {
+        font-size:16px;
+        span {
+          font-size:1.25em;
+        }
+      }
+    }
+  }
+
   .section04 {
     .columns-wrapper {
       .column {
@@ -1344,6 +1404,17 @@ section {
 
 @media screen and (max-width:351px) {
   
+  .section02 {
+    .info {
+      p {
+        font-size:14px;
+        span {
+          font-size:1.25em;
+        }
+      }
+    }
+  }
+
   .section04 {
     .columns-wrapper {
       .column {

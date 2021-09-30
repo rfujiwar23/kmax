@@ -49,8 +49,7 @@ section {
 }
 
 .parallax-bg {
-  background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
-  background-attachment: fixed;
+  background: #1E456E;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,17 +71,16 @@ section {
 }
 .parallax-bg .top-wrapper .top-title .text-space {
   margin-top: 5vh;
-  background: rgba(255, 255, 255, 0.9);
   font-size: 1.25em;
   font-weight: bold;
   line-height: 2em;
   padding: 4vh 0;
+  color: white;
 }
 
 .parallax-bg-bottom {
   position: relative;
   background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,7 +147,7 @@ section {
 .section02 .info {
   max-width: 450px;
   width: 100%;
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
   padding: 20px 10px;
   border-radius: 5px;
 }
@@ -180,7 +178,6 @@ section {
 
 .top {
   background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -205,7 +202,7 @@ section {
 
 /*スクロールするコンテンツ*/
 .section03 {
-  background-color: #8fa2ad;
+  background-color: #676e72;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -702,7 +699,13 @@ section {
     color: white;
   }
 
-  .parallax-bg, .top {
+  .top {
+    background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .parallax-bg-bottom {
     background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg");
     background-position: center;
     background-size: cover;
@@ -728,7 +731,7 @@ section {
     margin: 0 auto;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text {
-    padding: 20px;
+    padding: 12px;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
     font-size: 1.25em;
@@ -749,6 +752,19 @@ section {
     font-size: 1.1em;
   }
 }
+@media screen and (max-width: 576px) {
+  .parallax-bg-bottom {
+    overflow-y: scroll;
+  }
+  .parallax-bg-bottom footer {
+    margin-top: 10vh;
+    position: relative;
+    flex-direction: column;
+  }
+  .parallax-bg-bottom footer .left, .parallax-bg-bottom footer .right, .parallax-bg-bottom footer .middle {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 532px) {
   .section04 .columns-wrapper .column .container .outer .category .category-text {
     padding: 10px;
@@ -765,8 +781,18 @@ section {
     display: block;
   }
 
+  .section02 {
+    padding: 40px 10px;
+  }
+  .section02 .info {
+    max-width: 450px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 10px;
+    border-radius: 5px;
+  }
+
   .section03 {
-    background-color: #8fa2ad;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -858,6 +884,11 @@ section {
     text-align: center;
   }
 }
+@media screen and (max-width: 466px) {
+  .parallax-bg-bottom .container h6 span {
+    font-size: 0.9em;
+  }
+}
 @media screen and (max-width: 444px) {
   .br_on {
     display: block;
@@ -885,6 +916,13 @@ section {
   }
 }
 @media screen and (max-width: 430px) {
+  .section02 .info p {
+    font-size: 16px;
+  }
+  .section02 .info p span {
+    font-size: 1.25em;
+  }
+
   .section04 .columns-wrapper .column h6 {
     font-size: 1.1em;
   }
@@ -972,6 +1010,13 @@ section {
   }
 }
 @media screen and (max-width: 351px) {
+  .section02 .info p {
+    font-size: 14px;
+  }
+  .section02 .info p span {
+    font-size: 1.25em;
+  }
+
   .section04 .columns-wrapper .column h6 {
     font-size: 0.9em;
   }
