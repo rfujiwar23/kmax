@@ -683,6 +683,21 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
+  #cta_btn {
+    display: block;
+    margin: auto;
+    position: fixed;
+    bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    right: 5%;
+    z-index: 999;
+    background: #F26722;
+  }
+  #cta_btn a {
+    color: white;
+  }
+
   .parallax-bg, .top {
     background-image: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg");
   }

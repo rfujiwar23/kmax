@@ -19,6 +19,10 @@ html {
   display: none;
 }
 
+// #cta_btn {
+//   display: none;
+// }
+
 .white-out {
   color:white;
   user-select: none;
@@ -856,6 +860,23 @@ section {
 
 
 @media screen and (max-width:768px) {
+  
+  #cta_btn {
+    display: block;
+    margin:auto;
+    position: fixed;
+    bottom:10px;
+    // left: 0;
+    padding:10px;
+    border-radius: 5px;
+    right: 5%;
+    z-index: 999;
+    background:$kmaxOrange;
+    a {
+      color: rgba(255,255,255,1);
+    }
+  }
+  
   .parallax-bg, .top {
     background-image: url('https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg');
   }
