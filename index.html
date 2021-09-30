@@ -51,12 +51,12 @@
     <script>
       $(function() {
         var outlink = $('#cta_btn');
-        outLink.hide();
+        outlink.hide();
         $(window).scrol(function() {
-          if($(this).scrollTop() > 3000) {
-            outLink.fadeIn();
+          if($(this).scrollTop() > 600) {
+            outlink.fadeIn();
           } else {
-            outLink.fadeOut();
+            outlink.fadeOut();
           }
         });
       });
@@ -282,7 +282,7 @@
     </section>
     
     
-    <section class="section07">
+    <!-- <section class="section07">
       <div class="container-fluid">
         <div class="text">
           <h4 class="text-center">特徴<span>４</span>豪華な出演者</h4>
@@ -296,10 +296,6 @@
             
           </div>
           <div class="phone-only my-5">
-            <!-- create slider of above image, make sure to display:none of pc-only -->
-           
-
-
           </div> 
 
           <div class="text text-center mt-5">
@@ -317,7 +313,7 @@
                     <img :src="rank.imgUrl" :alt="rank.name" class="img-fluid">
                   </a> 
                 </div>
-                <!-- Content for Popover -->
+                
                 <div class="hidden d-none" :id="'a'+rank.id">
                   <div class="popover-heading">
                     {{rank.name}}
@@ -342,7 +338,7 @@
                   <p class="text-center p-2">洗濯してください <i class="fas fa-angle-down"></i></p>
                   
                   <select>
-                      <!-- <option>Choose Color</option> -->
+                      
                       <option value="color-tr-perm">COLOR/TREATMENT/PERM</option>
                       <option value="cut">CUT</option>
                       <option value="knowledge">KNOWLEDGE</option>
@@ -464,7 +460,7 @@
             </div>
           </div>
       </div>
-    </section>
+    </section> -->
 
 
     <section class="section08 py-5">
@@ -500,7 +496,7 @@
         <h6 class="text-center my-5"><span class="p-3">サブスク一般会員　全ての番組が視聴可能</span></h6>
         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 price flex" data-aos="fade-in">
+            <div class="col-lg-6 col-md-6 col-sm-6 price flex" >
               <div class="price-t">
                 <h4>通常価格</h4>
                 <h5>月額 1,990円</h5>
@@ -516,7 +512,7 @@
                 ２ヶ月分がお得に！</p>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 price flex" data-aos="fade-in">
+            <div class="col-lg-6 col-md-6 col-sm-6 price flex" >
               <div class="price-t">
                 <h4>OPEN記念価格</h4>
                 
@@ -538,7 +534,7 @@
         </div>
       
       </div>
-      <div id="cta_btn" style="display: block;"><a href="#">登録はこちら</a></div>
+      <div id="cta_btn"><a href="#">登録はこちら</a></div>
       <footer>
         <div class="left">
           <ul class="p-0">

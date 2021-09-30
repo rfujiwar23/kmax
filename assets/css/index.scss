@@ -19,9 +19,9 @@ html {
   display: none;
 }
 
-// #cta_btn {
-//   display: none;
-// }
+#cta_btn {
+  display: none;
+}
 
 .white-out {
   color:white;
@@ -865,7 +865,7 @@ section {
     display: block;
     margin:auto;
     position: fixed;
-    bottom:10px;
+    bottom:50px;
     // left: 0;
     padding:10px;
     border-radius: 5px;
