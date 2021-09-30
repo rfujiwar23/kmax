@@ -490,7 +490,7 @@ section {
       .rank {
         h4 {
           text-decoration: underline;
-          margin:9vh auto 4vh;
+          margin:9vh auto 1vh;
         }    
       }
       .curriculum {
@@ -547,6 +547,7 @@ section {
           display:block;
         }
       }
+      
     }
 }
 
@@ -899,6 +900,16 @@ section {
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .section07 {
+    .container-fluid {
+      .certificate {
+        .stamp {
+          margin:0 auto;
         }
       }
     }
@@ -1305,4 +1316,43 @@ section {
       }
     }
   }
+}
+
+@media screen and (max-width:351px) {
+  
+  .section04 {
+    .columns-wrapper {
+      .column {
+        h6 {
+          font-size: 0.9em;
+        }
+        .container {
+          .outer {
+            .category {
+              .category-text {
+                p {
+                  font-size: 0.6em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  .section10 {
+    .sect10-top-strip {
+      h2 {
+        font-size: 1.75em;
+      }
+    }
+    .container {
+      p {
+        font-size: 0.85em;
+      }
+    }
+  }
+  
 }

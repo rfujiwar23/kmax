@@ -417,7 +417,7 @@ section {
 }
 .section07 .container .rank h4 {
   text-decoration: underline;
-  margin: 9vh auto 4vh;
+  margin: 9vh auto 1vh;
 }
 .section07 .container .curriculum {
   color: #000;
@@ -717,6 +717,10 @@ section {
     font-size: 1em;
   }
 
+  .section07 .container-fluid .certificate .stamp {
+    margin: 0 auto;
+  }
+
   .parallax-bg-bottom .container .price .price-b p {
     font-size: 0.8em;
   }
@@ -944,6 +948,21 @@ section {
 
   .parallax-bg-bottom .container h6 span {
     font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 351px) {
+  .section04 .columns-wrapper .column h6 {
+    font-size: 0.9em;
+  }
+  .section04 .columns-wrapper .column .container .outer .category .category-text p {
+    font-size: 0.6em;
+  }
+
+  .section10 .sect10-top-strip h2 {
+    font-size: 1.75em;
+  }
+  .section10 .container p {
+    font-size: 0.85em;
   }
 }
 

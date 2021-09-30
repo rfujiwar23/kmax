@@ -294,6 +294,7 @@ $(function(){
           </div>
           <div class="rank" id="rank">
             <h4 class="text-center">会員ランク</h4>
+            <p class="smaller text-center">クリックすると詳細が見れます</p>
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-6 mb-3 mx-auto" v-for="rank in rankings">
                 <div class="text-center">
@@ -424,8 +425,10 @@ $(function(){
           </div>
 
           <div class="py-5 certificate col-lg-10 offset-lg-1 col-md-10 offset-md-1" id="stamps">
+            <h4 class="text-center">認定試験</h4>
+            <p class="text-center smaller">クリックすると詳細が見れます</p>
             <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-6" v-for="stamp in stampList">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-8 mb-4 p-0 stamp" v-for="stamp in stampList">
                 
                 <a data-html="true" data-placement="top" 
                   :data-popover-content="'#b'+stamp.id" 
