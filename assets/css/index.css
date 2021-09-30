@@ -45,7 +45,7 @@ section {
 }
 
 .parallax-bg {
-  background-image: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
+  background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -77,7 +77,7 @@ section {
 
 .parallax-bg-bottom {
   position: relative;
-  background-image: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
+  background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -175,7 +175,7 @@ section {
 }
 
 .top {
-  background-image: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
+  background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -699,7 +699,7 @@ section {
   }
 
   .parallax-bg, .top {
-    background-image: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg");
+    background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg");
     background-position: center;
     background-size: cover;
   }
