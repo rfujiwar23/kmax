@@ -6,10 +6,17 @@ body,
 html {
   height: 100%;
   width:100%;
+  // overflow-x: hidden;
   margin: 0 auto;
   // letter-spacing: 2px;
   // font-size: 10px;
   // overflow-x: hidden;
+}
+
+.wrapper {
+  // overflow-x: hidden;
+  height: 100%;
+  // width:100%;
 }
 
 .br_on {
@@ -20,8 +27,26 @@ html {
   display: none;
 }
 
-#cta_btn {
+
+.bottomMenu {
   display: none;
+  position: fixed;
+  bottom: 5.5%;
+  right:3%;
+  border-radius: 5px;
+  padding:10px 20px;
+  // border-top: 1px solid #000;
+  background: $kmaxOrange;
+  z-index: 99999;
+  box-shadow: 1px 3px 6px rgba(0,0,0,0.62);
+  a {
+    color:#fff;
+    font-weight: bold;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
 }
 
 .white-out {
