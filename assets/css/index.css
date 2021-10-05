@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body,
 html {
   height: 100%;
@@ -25,11 +30,13 @@ html {
   right: 3%;
   border-radius: 5px;
   padding: 10px 20px;
-  background: #F26722;
+  background: #2a908d;
   z-index: 99999;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.62);
 }
 .bottomMenu a {
+  margin-top: auto;
+  margin-bottom: auto;
   color: #fff;
   font-weight: bold;
 }
@@ -69,11 +76,10 @@ section {
 }
 
 .parallax-bg {
-  background: #1E456E;
+  background: #090504;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,6 +94,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 8vh 0;
+}
+.parallax-bg .top-wrapper .top-title .main-logo {
+  margin: 8vh auto 2vh;
+  width: 75%;
 }
 .parallax-bg .top-wrapper .top-title .text-space {
   margin-top: 5vh;
@@ -235,6 +246,8 @@ section {
 .section03 .selling-point h1 {
   text-align: center;
   margin-bottom: 90px;
+  color: #fff;
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.62);
 }
 .section03 .selling-point .main-points {
   display: flex;
@@ -578,6 +591,11 @@ section {
   line-height: 1.5em;
 }
 
+@media screen and (min-width: 1200px) {
+  .parallax-bg {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .section03 .selling-point {
     max-width: 1200px;
@@ -660,9 +678,19 @@ section {
     font-size: 1.25em;
   }
 }
+@media screen and (max-width: 1520px) {
+  body {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1089px) {
   .section06 .container-fluid .view-settings p {
     font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 992px) {
@@ -702,6 +730,10 @@ section {
   .section08 .container .section08-text {
     margin: 5vh 0 10vh;
   }
+
+  html {
+    overflow-x: hidden;
+  }
 }
 @media screen and (max-width: 768px) {
   #cta_btn {
@@ -720,13 +752,13 @@ section {
   }
 
   .top {
-    background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg");
+    background: url("../images/top-image-ph.jpg");
     background-position: center;
     background-size: cover;
   }
 
   .parallax-bg-bottom {
-    background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988159/kamismax/top-image-ph.jpg");
+    background: url("../images/top-image-ph.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -823,8 +855,8 @@ section {
   }
   .section03 .selling-point h1 {
     text-align: center;
-    margin-bottom: 70px;
-    font-size: 1.5em;
+    margin: 5vh 0;
+    font-size: 2em;
   }
   .section03 .selling-point .main-points {
     display: flex;
