@@ -110,12 +110,10 @@ section {
 }
 
 .parallax-bg-bottom {
-  position: relative;
   background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
 }
 .parallax-bg-bottom .logo {
   width: 45%;
@@ -151,7 +149,7 @@ section {
   line-height: 2em;
 }
 .parallax-bg-bottom footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   right: 0;
   left: 0;
@@ -512,6 +510,7 @@ section {
 }
 .section08 .container .video-iframe {
   padding: 0;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.62);
 }
 .section08 .container .video-iframe video {
   width: 100%;
@@ -805,9 +804,6 @@ section {
   }
 }
 @media screen and (max-width: 576px) {
-  .parallax-bg-bottom {
-    overflow-y: scroll;
-  }
   .parallax-bg-bottom footer {
     margin-top: 10vh;
     position: relative;
@@ -901,6 +897,7 @@ section {
 
   .section09 .sect09-sect .overlay-text h3 {
     font-size: 2em;
+    line-height: 2em;
   }
 
   .section10 .sect10-top-strip h2 {
@@ -954,7 +951,7 @@ section {
   }
 
   .section09 .sect09-sect .overlay-text h3 {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 
   .section10 .sect10-top-strip h2 {
@@ -1011,7 +1008,7 @@ section {
     font-size: 1em;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text p {
-    font-size: 0.85em;
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width: 400px) {
