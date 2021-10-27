@@ -23,24 +23,47 @@ html {
   display: none;
 }
 
+.br_on_992 {
+  display: none;
+}
+
 .bottomMenu {
   display: none;
   position: fixed;
   bottom: 5.5%;
   right: 3%;
+  z-index: 99999;
+}
+.bottomMenu .register {
   border-radius: 5px;
   padding: 10px 20px;
-  background: #2a908d;
-  z-index: 99999;
+  background: rgba(42, 144, 141, 0.9);
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.62);
 }
-.bottomMenu a {
+.bottomMenu .register a {
   margin-top: auto;
   margin-bottom: auto;
   color: #fff;
   font-weight: bold;
 }
-.bottomMenu a:hover {
+.bottomMenu .register a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.bottomMenu .sample {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: rgba(211, 123, 7, 0.9);
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.62);
+  margin-bottom: 2vh;
+}
+.bottomMenu .sample a {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #fff;
+  font-weight: bold;
+}
+.bottomMenu .sample a:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -57,8 +80,8 @@ html {
 
 /* Popover Header */
 .popover-title {
-  background-color: #73AD21;
-  color: #FFFFFF;
+  background-color: #73ad21;
+  color: #ffffff;
   font-size: 28px;
   text-align: center;
 }
@@ -66,7 +89,7 @@ html {
 /* Popover Body */
 .popover-content {
   background-color: coral;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 25px;
 }
 
@@ -110,7 +133,7 @@ section {
 }
 
 .parallax-bg-bottom {
-  background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
+  background: url("../images/kmx01.png") no-repeat;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -125,7 +148,7 @@ section {
   padding: 3vh 3vw;
 }
 .parallax-bg-bottom .container h3 {
-  color: #F26722;
+  color: #f26722;
 }
 .parallax-bg-bottom .container h3 span {
   background: rgba(0, 0, 0, 0.62);
@@ -135,7 +158,7 @@ section {
   background: rgba(255, 255, 255, 0.8);
 }
 .parallax-bg-bottom .container .price .price-t {
-  background: #8FA2AD;
+  background: #8fa2ad;
   color: white;
   text-align: center;
   padding: 10px;
@@ -186,7 +209,8 @@ section {
 }
 .section02 .info p span {
   font-weight: bold;
-  color: #B91313;
+  color: #b91313;
+  margin: 0 3px;
   font-size: 24px;
 }
 .section02 .info .btn {
@@ -196,17 +220,17 @@ section {
   font-size: 20px;
   margin: 10px auto;
   text-align: center;
-  background: #F26722;
+  background: #f26722;
   color: #fff;
 }
 .section02 .info .btn .kmx-register:hover {
   background: #fff;
-  border: 1px solid #F26722;
-  color: #F26722;
+  border: 1px solid #f26722;
+  color: #f26722;
 }
 
 .top {
-  background: url("https://res.cloudinary.com/rfujiwar23/image/upload/v1632988158/kamismax/top-image-pc.jpg");
+  background: url("../images/kmx01.png") no-repeat;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -325,9 +349,20 @@ section {
 }
 .section04 .columns-wrapper .column .category .category-image {
   padding: 0;
+  background: rgba(109, 109, 109, 0.7);
+  aspect-ratio: 16/9;
+}
+.section04 .columns-wrapper .column .category .category-image img {
+  width: 100%;
 }
 .section04 .columns-wrapper .column .category .category-text {
-  padding-top: 10px;
+  padding: 5px 10px;
+}
+.section04 .columns-wrapper .column .category .category-text h5 {
+  font-size: 1.5em;
+}
+.section04 .columns-wrapper .column .category .category-text p {
+  font-size: 1.25em;
 }
 
 .section05 {
@@ -388,6 +423,14 @@ section {
   padding-bottom: 50%;
   padding-right: 3px;
 }
+.section06 .text h4 em {
+  font-style: normal;
+  text-decoration: underline;
+  font-size: 1.5em;
+  padding: 5px 20px;
+  background: #1e456e;
+  color: #fff;
+}
 .section06 .container-fluid .view-settings {
   margin: 7vh auto;
 }
@@ -399,8 +442,8 @@ section {
   margin-bottom: 3px;
 }
 .section06 .container-fluid .view-settings .text-above h6 {
-  font-size: 1.25em;
-  background: #1E456E;
+  font-size: 1.15em;
+  background: #1e456e;
   padding: 10px 0;
   color: #fff;
   text-decoration: underline;
@@ -463,7 +506,7 @@ section {
 }
 .section07 .container .curriculum .drop-select .field h5 {
   font-size: 1.25em;
-  background: #A8A088;
+  background: #a8a088;
   padding: 5px;
   color: #fff;
   margin: 0;
@@ -590,6 +633,11 @@ section {
   line-height: 1.5em;
 }
 
+@media screen and (max-width: 1248px) {
+  .section06 .container-fluid .view-settings .text-above h6 {
+    font-size: 1em;
+  }
+}
 @media screen and (min-width: 1200px) {
   .parallax-bg {
     max-width: 100%;
@@ -653,21 +701,13 @@ section {
     bottom: 0;
     left: 0;
   }
-  .section04 .columns-wrapper .column p {
-    padding: 0 20px;
-  }
   .section04 .columns-wrapper .column .category {
     background: #c9b783;
     position: relative;
   }
-  .section04 .columns-wrapper .column .category .category-overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 999;
-  }
-  .section04 .columns-wrapper .column .category .category-image {
-    padding: 0;
+  .section04 .columns-wrapper .column .category .category-text p {
+    font-size: 1.15em;
+    padding: 0 10px;
   }
 
   .parallax-bg-bottom .container .price .price-b p {
@@ -687,9 +727,9 @@ section {
     font-size: 0.8em;
   }
 }
-@media screen and (min-width: 992px) {
-  body {
-    overflow-x: hidden;
+@media screen and (max-width: 1067px) {
+  .section06 .container-fluid .view-settings .text-above h6 {
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 992px) {
@@ -712,14 +752,17 @@ section {
     padding: 5px 10px 0;
   }
   .section04 .columns-wrapper .column .container .category .category-text h5 {
-    font-size: 0.9em;
+    font-size: 1.3em;
   }
   .section04 .columns-wrapper .column .container .category .category-text p {
-    font-size: 0.75em;
+    font-size: 1em;
   }
 
   .section06 .container-fluid .view-settings p {
     font-size: 1em;
+  }
+  .section06 .container-fluid .view-settings .text-above h6 {
+    font-size: 1.25em;
   }
 
   .section07 .container .curriculum .drop-select {
@@ -730,8 +773,21 @@ section {
     margin: 5vh 0 10vh;
   }
 
+  .br_on_992 {
+    display: block;
+  }
+
+  .section09 .sect09-sect .overlay-text h3 {
+    line-height: 1.5em;
+  }
+
   html {
     overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section04 .columns-wrapper .column p {
+    padding: 0 10px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -744,22 +800,22 @@ section {
     border-radius: 5px;
     right: 5%;
     z-index: 999;
-    background: #F26722;
+    background: #f26722;
   }
   #cta_btn a {
     color: white;
   }
 
   .top {
-    background: url("../images/top-image-ph.jpg");
+    background: url("../images/top-image-ph.png");
     background-position: center;
     background-size: cover;
   }
 
   .parallax-bg-bottom {
-    background: url("../images/top-image-ph.jpg");
+    background: url("../images/top-image-ph.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
 
   .section02 .text-area {
@@ -785,11 +841,11 @@ section {
     padding: 12px;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text p {
     padding: 0;
-    font-size: 1em;
+    font-size: 1.25em;
   }
 
   .section07 .container-fluid .certificate .stamp {
@@ -803,14 +859,49 @@ section {
     font-size: 1.1em;
   }
 }
+@media screen and (max-width: 670px) {
+  .section06 .container-fluid .view-settings .text-above h6 {
+    font-size: 1.1em;
+  }
+
+  .bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 0.75%;
+    left: 0.75%;
+  }
+  .bottomMenu .register {
+    width: 48%;
+    float: right;
+    font-size: 0.9em;
+  }
+  .bottomMenu .sample {
+    width: 48%;
+    float: left;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section04 .columns-wrapper .column .container #program {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 576px) {
   .parallax-bg-bottom footer {
     margin-top: 10vh;
     position: relative;
     flex-direction: column;
   }
-  .parallax-bg-bottom footer .left, .parallax-bg-bottom footer .right, .parallax-bg-bottom footer .middle {
+  .parallax-bg-bottom footer .left,
+.parallax-bg-bottom footer .right,
+.parallax-bg-bottom footer .middle {
     text-align: center;
+  }
+
+  .section09 .sect09-sect .overlay-text h3 {
+    font-size: 2em;
   }
 }
 @media screen and (max-width: 532px) {
@@ -818,10 +909,10 @@ section {
     padding: 10px;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text p {
-    font-size: 0.8em;
+    font-size: 1.05em;
   }
 }
 @media screen and (max-width: 520px) {
@@ -894,6 +985,9 @@ section {
   .section06 .container-fluid .view-settings p {
     font-weight: bold;
   }
+  .section06 .text h4 em {
+    font-size: 1.4em;
+  }
 
   .section09 .sect09-sect .overlay-text h3 {
     font-size: 2em;
@@ -929,8 +1023,19 @@ section {
     position: relative;
     flex-direction: column;
   }
-  .parallax-bg-bottom footer .left, .parallax-bg-bottom footer .right, .parallax-bg-bottom footer .middle {
+  .parallax-bg-bottom footer .left,
+.parallax-bg-bottom footer .right,
+.parallax-bg-bottom footer .middle {
     text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section04 .columns-wrapper .column .container {
+    padding: 0;
+  }
+
+  .section06 .text h4 em {
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 466px) {
@@ -948,6 +1053,11 @@ section {
   }
   .section04 .columns-wrapper .column .container .category .category-text p {
     padding: 0;
+  }
+
+  .section06 .text h4 em {
+    font-size: 1.15em;
+    padding: 5px 10px;
   }
 
   .section09 .sect09-sect .overlay-text h3 {
@@ -975,14 +1085,20 @@ section {
   .section04 .columns-wrapper .column h6 {
     font-size: 1.1em;
   }
+  .section04 .columns-wrapper .column .container {
+    padding: 0;
+  }
+  .section04 .columns-wrapper .column .container .outer {
+    padding: 0;
+  }
   .section04 .columns-wrapper .column .container .outer .category .category-text {
     padding: 10px 10px 0;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .section09 .sect09-sect .overlay-text h3 {
@@ -996,8 +1112,8 @@ section {
     font-size: 1.1em;
   }
 
-  .parallax-bg-bottom .container h6 span {
-    font-size: 0.8em;
+  .parallax-bg-bottom .container .price .price-b p {
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 424px) {
@@ -1005,10 +1121,16 @@ section {
     padding: 8px 8px 0;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
-    font-size: 1em;
+    font-size: 1.25em;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text p {
-    font-size: 0.8em;
+    font-size: 1.05em;
+  }
+}
+@media screen and (max-width: 414px) {
+  .section06 .text h4 em {
+    font-size: 1.2em;
+    padding: 5px 7px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1016,10 +1138,28 @@ section {
     padding: 5px 5px 0;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text p {
-    font-size: 0.6em;
+    font-size: 0.95em;
+  }
+
+  .bottom .container .row .text-area h5 {
+    font-size: 1.1em;
+  }
+
+  .section06 .text h4 em {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section10 .sect10-top-strip h2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 391px) {
+  .section09 .sect09-sect .overlay-text h3 {
+    font-size: 1.45em;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1041,10 +1181,14 @@ section {
     padding: 5px 5px 0;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text p {
-    font-size: 0.7em;
+    font-size: 0.9em;
+  }
+
+  .section06 .text h4 em {
+    font-size: 1em;
   }
 
   .section09 .sect09-sect .overlay-text h3 {
@@ -1056,6 +1200,9 @@ section {
 
   .parallax-bg-bottom .container h6 span {
     font-size: 0.7em;
+  }
+  .parallax-bg-bottom .container .price {
+    width: 90%;
   }
 }
 @media screen and (max-width: 351px) {
@@ -1070,11 +1217,19 @@ section {
     font-size: 0.9em;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text p {
-    font-size: 0.6em;
+    font-size: 0.9em;
+  }
+
+  .section08 .container .section08-text .text h4 {
+    font-size: 1.25em;
+  }
+
+  .section09 .sect09-sect .overlay-text h3 {
+    font-size: 1.25em;
   }
 
   .section10 .sect10-top-strip h2 {
-    font-size: 1.75em;
+    font-size: 1.25em;
   }
   .section10 .container p {
     font-size: 0.85em;
