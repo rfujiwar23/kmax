@@ -145,7 +145,7 @@ section {
 }
 .parallax-bg-bottom .logo h1 {
   background: rgba(0, 0, 0, 0.62);
-  padding: 3vh 3vw;
+  padding: 1vh 1vw;
 }
 .parallax-bg-bottom .container h3 {
   color: #f26722;
@@ -1095,10 +1095,10 @@ section {
     padding: 10px 10px 0;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text h5 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .section04 .columns-wrapper .column .container .outer .category .category-text p {
-    font-size: 1em;
+    font-size: 1.15em;
   }
 
   .section09 .sect09-sect .overlay-text h3 {
@@ -1109,7 +1109,7 @@ section {
     font-size: 2em;
   }
   .section09 .sect09-sect .overlay-text p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
   .parallax-bg-bottom .container .price .price-b p {

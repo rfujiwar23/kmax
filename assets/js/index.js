@@ -25,42 +25,42 @@ var vm = new Vue({
     }
 });
 
-var vm = new Vue({
-    el: '#rank',
-    data: {
-      rankings: [
-       {id:1, imgUrl: 'assets/images/kmx019.png', name: 'REGULAR', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'},
-       {id:2, imgUrl: 'assets/images/kmx020.png', name: 'CRYSTAL', body: 'テッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリ'},
-       {id:3, imgUrl: 'assets/images/kmx021.png', name: 'SAPPHIRE', body: 'テキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウ' },
-       {id:4, imgUrl: 'assets/images/kmx022.png', name: 'EMERALD', body: 'テキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキ' },
+// var vm = new Vue({
+//     el: '#rank',
+//     data: {
+//       rankings: [
+//        {id:1, imgUrl: 'assets/images/kmx019.png', name: 'REGULAR', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'},
+//        {id:2, imgUrl: 'assets/images/kmx020.png', name: 'CRYSTAL', body: 'テッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリ'},
+//        {id:3, imgUrl: 'assets/images/kmx021.png', name: 'SAPPHIRE', body: 'テキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウ' },
+//        {id:4, imgUrl: 'assets/images/kmx022.png', name: 'EMERALD', body: 'テキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキ' },
     
-      ]
-    }
-});
+//       ]
+//     }
+// });
 
-var vm = new Vue({
-  el: '#tabletUp',
-  data: {
-    images: [
-     {imgUrl: 'assets/images/kmx016.png', name: 'KAMISMAX 画像'},
-     {imgUrl: 'assets/images/kmx017.png', name: 'KAMISMAX 画像'},
-     {imgUrl: 'assets/images/kmx018.png', name: 'KAMISMAX 画像'},
-    ]
-  }
-});
+// var vm = new Vue({
+//   el: '#tabletUp',
+//   data: {
+//     images: [
+//      {imgUrl: 'assets/images/kmx016.png', name: 'KAMISMAX 画像'},
+//      {imgUrl: 'assets/images/kmx017.png', name: 'KAMISMAX 画像'},
+//      {imgUrl: 'assets/images/kmx018.png', name: 'KAMISMAX 画像'},
+//     ]
+//   }
+// });
 
-var vm = new Vue({
-  el: '#stamps',
-  data: {
-    stampList: [
-     {id:1, imgUrl: 'assets/images/001-trend-cut1.png', name: 'CUT', type: 'Trend', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'},
-     {id:2, imgUrl: 'assets/images/002-study-cut.png', name: 'CUT', type: 'Study', body: 'テッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリ'},
-     {id:3, imgUrl: 'assets/images/003-trend-cut2.png', name: 'CUT', type: 'Trend', body: 'テキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウ'},
-     {id:4, imgUrl: 'assets/images/004-study-color.png', name: 'COLOR', type: 'Trend', body: 'テキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキ'},
-     {id:5, imgUrl: 'assets/images/005-trend-perm.png', name: 'PERM', type: 'Study', body: 'テキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウ'},
-    ]
-  }
-});
+// var vm = new Vue({
+//   el: '#stamps',
+//   data: {
+//     stampList: [
+//      {id:1, imgUrl: 'assets/images/001-trend-cut1.png', name: 'CUT', type: 'Trend', body: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'},
+//      {id:2, imgUrl: 'assets/images/002-study-cut.png', name: 'CUT', type: 'Study', body: 'テッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリテッキリ'},
+//      {id:3, imgUrl: 'assets/images/003-trend-cut2.png', name: 'CUT', type: 'Trend', body: 'テキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウ'},
+//      {id:4, imgUrl: 'assets/images/004-study-color.png', name: 'COLOR', type: 'Trend', body: 'テキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキテキパキ'},
+//      {id:5, imgUrl: 'assets/images/005-trend-perm.png', name: 'PERM', type: 'Study', body: 'テキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウテキトウ'},
+//     ]
+//   }
+// });
 
 var vm = new Vue({
   el: '#program',
@@ -91,13 +91,13 @@ var vm = new Vue({
   }
 });
 
-var vm = new Vue ({
-  el: '#offers',
-  data: {
-    plans: [
-      {type: '通常価格', monthly: '月額 1,990円', yearly:'年間 23,880円', offer: '年間契約', perYear: '年額19,900円', perMonth: '(実質月額1,658円)', text:'年間契約で２ヶ月分がお得に！'},
-      {type: 'OPEN記念価格', monthly: '月額 1,490円', yearly:'年間 17,880円', offer: '年間契約', perYear: '年額 14,900円', perMonth: '(実質月額1,241円)', text:'お申し込み後、２年間特別価格で' + '\n' + 'ご利用いただけます'},
-    ]
-  }
-});
+// var vm = new Vue ({
+//   el: '#offers',
+//   data: {
+//     plans: [
+//       {type: '通常価格', monthly: '月額 1,990円', yearly:'年間 23,880円', offer: '年間契約', perYear: '年額19,900円', perMonth: '(実質月額1,658円)', text:'年間契約で２ヶ月分がお得に！'},
+//       {type: 'OPEN記念価格', monthly: '月額 1,490円', yearly:'年間 17,880円', offer: '年間契約', perYear: '年額 14,900円', perMonth: '(実質月額1,241円)', text:'お申し込み後、２年間特別価格で' + '\n' + 'ご利用いただけます'},
+//     ]
+//   }
+// });
 
