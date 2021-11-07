@@ -99,18 +99,19 @@ section {
 }
 
 .parallax-bg {
-  background: #090504;
+  background-color: #090504;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .parallax-bg .nav {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
+  left: 2%;
   z-index: 4;
 }
 .parallax-bg .top-wrapper {
@@ -118,6 +119,7 @@ section {
   justify-content: center;
   align-items: center;
   padding: 8vh 0;
+  position: relative;
 }
 .parallax-bg .top-wrapper .top-title .main-logo {
   margin: 8vh auto 2vh;
@@ -130,6 +132,21 @@ section {
   line-height: 2em;
   padding: 4vh 0;
   color: white;
+  text-shadow: 1px 2px 3px #676e72;
+  z-index: 999;
+}
+.parallax-bg .float-image {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  right: 0%;
+  width: 30%;
+}
+.parallax-bg .float-image .text {
+  float: left;
+}
+.parallax-bg .float-image .img-right {
+  float: right;
 }
 
 .parallax-bg-bottom {
@@ -170,6 +187,42 @@ section {
 }
 .parallax-bg-bottom .container .price .price-b p {
   line-height: 2em;
+}
+.parallax-bg-bottom .container .price .spec-t {
+  background: #17174a;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.66);
+  text-shadow: #676e72 1px 2px 3px;
+}
+@keyframes flicker {
+  0%, 50%, 100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #d3cf5d, 0 0 80px #d3cf5d, 0 0 90px #d3cf5d, 0 0 100px #d3cf5d, 0 0 150px #d3cf5d;
+  }
+  75% {
+    text-shadow: none;
+  }
+}
+.parallax-bg-bottom .container .price .spec-t .glow {
+  animation: flicker 2s infinite alternate;
+  color: #fff;
+}
+.parallax-bg-bottom .container .price .spec {
+  border-width: 6px;
+  outline-offset: -6px;
+  border-style: solid;
+  border-image: #3c3d3d;
+  border-image: linear-gradient(to right, #17174a, #17174a) 1;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.66);
+}
+.parallax-bg-bottom .container .price .spec a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: blue;
+}
+.parallax-bg-bottom .container .price .regular {
+  border-width: 6px;
+  outline-offset: -6px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #fff, #fff) 1;
 }
 .parallax-bg-bottom footer {
   position: relative;
@@ -449,9 +502,36 @@ section {
   text-decoration: underline;
   margin-bottom: 0;
 }
+.section06 .container-fluid .multi-angle h4 {
+  font-size: 2em;
+}
+.section06 .container-fluid .multi-angle h6 {
+  font-size: 1.25em;
+  line-height: 1.75em;
+  font-weight: normal;
+}
+.section06 .container-fluid .multi-angle h6 strong {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.section06 .container-fluid .multi-angle h6 em {
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: bold;
+}
+.section06 .container-fluid .multi-angle .description ul {
+  list-style: none;
+}
+.section06 .container-fluid .multi-angle .description ul li {
+  float: left;
+}
 
 .modal {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+body.modal-open {
+  overflow: visible;
 }
 
 .section07 {
@@ -631,6 +711,23 @@ section {
   font-size: 1.25em;
   font-weight: bold;
   line-height: 1.5em;
+}
+
+.price-modal-body p.price-tag {
+  font-size: 1.25em;
+  text-align: center;
+}
+.price-modal-body p.price-tag strong {
+  color: #000;
+}
+.price-modal-body p.price-tag span {
+  color: #b91313;
+  font-weight: 600;
+}
+.price-modal-body p.price-tag em {
+  font-size: 0.75em;
+  font-style: normal;
+  color: #b91313;
 }
 
 @media screen and (max-width: 1248px) {
@@ -900,6 +997,10 @@ section {
     text-align: center;
   }
 
+  .parallax-bg .float-image {
+    width: 50%;
+  }
+
   .section09 .sect09-sect .overlay-text h3 {
     font-size: 2em;
   }
@@ -1012,7 +1113,7 @@ section {
     padding-right: 0;
   }
   .parallax-bg-bottom .container .price {
-    width: 75%;
+    width: 85%;
     margin: 10px auto;
   }
   .parallax-bg-bottom .container h6 span {
@@ -1101,6 +1202,32 @@ section {
     font-size: 1.15em;
   }
 
+  .section06 .container-fluid .multi-angle {
+    margin-top: 10vh;
+  }
+  .section06 .container-fluid .multi-angle h4 {
+    font-size: 1.25em;
+  }
+  .section06 .container-fluid .multi-angle h6 {
+    font-size: 0.85em;
+    line-height: 1.75em;
+    font-weight: normal;
+  }
+  .section06 .container-fluid .multi-angle h6 strong {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+  .section06 .container-fluid .multi-angle .description .points {
+    border-top: #000 dotted 1px;
+    padding-top: 10px;
+  }
+  .section06 .container-fluid .multi-angle .description .points h5 {
+    font-size: 1em;
+  }
+  .section06 .container-fluid .multi-angle .description .points p {
+    font-size: 0.9em;
+  }
+
   .section09 .sect09-sect .overlay-text h3 {
     font-size: 1.65em;
     padding-bottom: 3px;
@@ -1109,7 +1236,7 @@ section {
     font-size: 2em;
   }
   .section09 .sect09-sect .overlay-text p {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .parallax-bg-bottom .container .price .price-b p {
@@ -1203,6 +1330,10 @@ section {
   }
   .parallax-bg-bottom .container .price {
     width: 90%;
+  }
+
+  .price-modal-body p {
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 351px) {

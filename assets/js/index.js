@@ -20,8 +20,17 @@ var vm = new Vue({
        {imgUrl: 'assets/images/kmx012.png', text: 'デジタルの可能性を', text2: '最大に活用', alt: 'KAMISMAX 画像　カメラ'},
        {imgUrl: 'assets/images/kmx015.png', text: '圧倒的なクオリティで見る', text2: '鮮明な映像', alt: 'KAMISMAX 画像　カメラ'},
        {imgUrl: 'assets/images/kmx013.png', text: '髪の毛１本１本を', text2: '鮮明に捉える4Kカメラで撮影', alt: 'KAMISMAX 画像　カメラ'},
-       {imgUrl: 'assets/images/kmx014.png', text: 'マルチアングル', text2: 'ボタン一つで見たい視点が選択可能', alt: 'KAMISMAX 画像　カメラ'},
+       {imgUrl: 'assets/images/kmx014.png', text: 'マルチアングル', text2: '*ボタン一つで見たい視点が選択可能', alt: 'KAMISMAX 画像　カメラ'},
+      ],
+      views: [
+        {thumbnail: 'assets/images/kmx-ma001-multiangle.png', text: '複数の方向から撮影されている映像をボタン一つで自由に視点が切り替えられる機能。', type:'マルチアングル'},
+        {thumbnail: 'assets/images/kmx-ma003-4k.png', text: '髪一本一本の動きや色を鮮明に捉える4Kカメラで撮影。' + '\n' + '業界のクオリティ間違いなし!', type:'圧倒的な映像クオリティ'},
+        {thumbnail: 'assets/images/kmx-ma002-3min.png', text: '空いた時間に手軽に視聴可能。', type:'平均３分にチャプター分け'},
+      ],
+      texts: [
+        {jptext: '4方向から、”見たい視点”を選んで試聴が可能'},
       ]
+
     }
 });
 

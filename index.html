@@ -37,13 +37,16 @@
     <!-- Most of the information is in the js file -->
     <div class="bottomMenu text-center">
       <div class="sample">
-        <a href="https://kamismax.kamisma.com/service1">サンプル動画は<br>こちら</a>
+        <a href="https://kamismax.kamisma.com/service2">サンプル動画は<br>こちら</a>
       </div>
       <div class="register">
-        <a href="#">会員登録は<br>こちら</a>
+        <a href="https://kamismax.kamisma.com/login">会員登録は<br>こちら</a>
       </div>
     </div>
     <section class="parallax-bg">
+      <div class="nav">
+        <img src="assets/images/invade-logo-white.svg" alt="INVADE" height="60">
+      </div>
       <div class="top-wrapper">
         <div class="top-title p-2">
           <video style="width:100%" controlslist="nodownload" muted autoplay loop playsinline controls>
@@ -54,12 +57,18 @@
                   class="img-fluid"></span></h1>
           </div>
           <div class="text-space col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
-            <p class="text-center">一流美容師の技術や考え方が学べる<br>
-              ”美容の世界”を変える動画配信サービス
+            <p class="text-left ml-3">一流の技術と思考を<br class="br_on_500">あなたの手に！<br>
+              ”美容の世界”を変える<br class="br_on_500">動画配信サービス
             </p>
+            <!-- <img src="assets/images/kamismax-phone1.png" alt="KAMISMAX" class="img-fluid new-image-float"> -->
           </div>
+          
         </div>
+        <!-- <img src="assets/images/kamismax-phone1.png" alt="KAMISMAX" class="img-fluid float-image"> -->
+   
       </div>
+      <img src="assets/images/pic1-1.png" alt="KAMISMAX" class="img-fluid float-image">
+      
     </section>
     <section class="section02 top py-5">
       <div class="info my-5" data-aos="fade-right">
@@ -68,8 +77,9 @@
         <p>定額見放題で<span>24時間</span>繰り返し視聴可能</p>
         <p>通常価格<span>月額1,990円</span></p>
         <p>今なら<span>月額1,490円</span>で<span>学び放題</span></p>
-        <a class="btn">
+        <a href="https://kamismax.kamisma.com/login" class="btn">
           <div class="kmx-register">
+            
             会員登録はこちら
           </div>
         </a>
@@ -118,6 +128,7 @@
             <li data-aos="fade-up-right"><span>{{solution.id }}.</span> {{solution.text}}</li>
           </ul>
         </div>
+        
       </div>
     </section>
     <section class="section09">
@@ -133,6 +144,7 @@
               class="img-fluid p-4"></h1>
         </div>
       </div>
+      
     </section>
     <section class="section03">
       <div class="selling-point" id="points">
@@ -148,6 +160,7 @@
             </div>
           </div>
         </div>
+        
       </div>
     </section>
     <section class="section04">
@@ -202,6 +215,24 @@
             <img :src="image.imgUrl" :alt="image.alt" class="img-fluid">
           </div>
         </div>
+        <div class="multi-angle col-lg-10 offset-lg-1 col-md-10 offset-md-1">
+          <h4 class="text-center">*ここがポイント! 業界初の視聴環境</h4>
+          <h6 class="text-center">色んな角度から見ることができる<br><strong>「マルチアングル」</strong><br class="br_on"> <em>×</em> <br class="br_on_500">圧倒的な映像クオリティの<strong>「4K」</strong></h6>
+          <div class="description">
+            <div class="row">
+              <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1 mt-5" v-for="text in texts">
+                <p class="text-center mb-0">{{text.jptext}}</p>
+                <img src="assets/images/kmx-ma004-multi.png" alt="Multi-angle" class="img-fluid">
+                <p class="text-center t-bottom">業界初の新機能…教育動画の可能性を<br class="br_on">大幅に引き上げています！</p>
+                
+                <div class="row col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-8 offset-2">
+                  <div class="col-4" v-for="view in views">
+                    <img :src="view.thumbnail" class="img-fluid" :alt="view.type"></div class="col-3">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section08 py-5">
@@ -242,33 +273,61 @@
                 <h5>月額 1,990円</h5>
                 <h6>年間 23,880円</h6>
               </div>
-              <div class="price-b">
+              <div class="price-b regular">
                 <h3>年間契約</h3>
                 <h4>年額19,900円</h4>
                 <h6>(実質月額 1,658円)</h6>
                 <hr>
                 <!-- <p>&nbsp;</p> -->
-                <p>&nbsp;<br>年間契約で２ヶ月分がお得に！</p>
+                <p>&nbsp;<br>年間契約で２ヶ月分がお得に！<br>&nbsp;</p>
 
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6 price flex">
-              <div class="price-t">
-                <h4>OPEN記念価格</h4>
-                <h5>月額 1,490円</h5>
-                <h6>年間 17,880円</h6>
+            <div class="col-lg-6 col-md-6 col-sm-6 price flex" data-aos="zoom-out-right" data-aos-duration="1000">
+              <div class="price-t spec-t">
+                <h4 class="glow">OPEN記念価格</h4>
+                <h5 class="glow">月額 1,490円</h5>
+                <h6 class="glow">年間 17,880円</h6>
               </div>
-              <div class="price-b">
+              <div class="price-b spec">
                 <h3>年間契約</h3>
                 <h4>年額 14,900円</h4>
                 <h6>(実質月額 1,241円)
                 </h6>
                 <hr>
-                <p>お申し込み後、<br>２年間特別価格でご利用いただけます</p>
+                <p><strong>お申し込み後、<br>２年間特別価格でご利用いただけます</strong><br><a data-toggle="modal" data-target="#priceModal">【詳しくはこちら】</a></p>
 
               </div>
             </div>
+
+            <div class="modal fade" id="priceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">OPEN記念価格</h5> -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body price-modal-body">
+                    <p>
+                      今お申し込みいただくと、会員登録から２年間、特別価格でご利用いただくことができます。<br>
+                      さらに３年目以降もご継続いただける場合、自動的に特別会員ランクとなり、
+                    </p>
+                    <p class="price-tag"><strong>月額:</strong> <span>1,490</span><em>円</em><br><strong>年額:</strong> <span>14,900</span><em>円</em></p>
+                    <p>
+                      特別価格のまま、引き続きご利用いただけます。
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
           <h6 class="text-center my-5"><span class="p-2">是非、KAMISMAXの世界をご堪能ください！</span></h6>
         </div>
