@@ -839,6 +839,174 @@ body.modal-open {
     }
   }
 }
+
+.section12 {
+  .accordion {
+    width: 100%;
+    max-width: 560px;
+    margin: 20px auto;
+    h1 {
+      cursor: pointer;
+      padding: 15px 20px;
+      background-color: #333;
+      font-family: Lobster;
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: #1abc9c;
+      &:hover {
+        color: #4afcdc;
+      }
+      &:first-child {
+        border-radius: 10px 10px 0 0;
+      }
+      &:last-of-type {
+        border-radius: 0 0 10px 10px;
+      }
+      &:not(:last-of-type) {
+        border-bottom: 1px dotted #1abc9c;
+      }
+    }
+    h2 {
+      // font-family: "News Cycle";
+      padding: 5px 25px;
+      background-color: #1abc9c;
+      font-size: 1.1rem;
+      color: #333;
+      &:hover {
+        background-color: #09ab8b;
+      }
+    }
+    div {
+      display: none;
+    }
+    p {
+      display: none;
+      padding: 15px 35px;
+      background-color: #ddd;
+      font-family: "Georgia";
+      font-size: .8rem;
+      color: #333;
+      line-height: 1.3rem;
+    }
+    h3 {
+      padding: 5px 30px;
+      background-color: #b94152;
+      font-size: .9rem;
+      color: #ddd;
+      &:hover {
+        background-color: #a93142;
+      }
+    }
+    h4 {
+      padding: 5px 35px;
+      background-color: #ffc25a;
+      font-size: .9rem;
+      color: #af720a;
+      &:hover {
+        background-color: #e0b040;
+      }
+    }
+    .opened-for-codepen {
+      display: block;
+    }
+  }
+  h2 {
+    cursor: pointer;
+  }
+  h3 {
+    cursor: pointer;
+    // font-family: "News Cycle";
+  }
+  h4 {
+    cursor: pointer;
+    // font-family: "News Cycle";
+  }
+  
+  
+}
+
+.section13 {
+  * {
+    margin:0;
+    padding:0;
+  }
+  .accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  .accordion h1, h2, h3, h4 {
+    cursor: pointer;
+  }
+  .accordion h2, h3, h4 {
+    font-family: "News Cycle";
+  }
+  .accordion h1 {
+    padding: 15px 20px;
+    background-color: #333;
+    font-family: Lobster;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #1abc9c;
+  }
+  .accordion h1:hover {
+    color: #4afcdc;
+  }
+  .accordion h1:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  .accordion h1:last-of-type {
+    border-radius: 0 0 10px 10px;
+  }
+  .accordion h1:not(:last-of-type) {
+    border-bottom: 1px dotted #1abc9c;
+  }
+  .accordion div, .accordion p {
+    display: none;
+  }
+  .accordion h2 {
+    padding: 10px 25px;
+    background-color: #d78006;
+    border-bottom:1px dotted #676e72;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  .accordion h2:hover {
+    background-color: #ab4409;
+  }
+  .accordion h3 {
+    padding: 5px 30px;
+    background-color: #b94152;
+    font-size: .9rem;
+    color: #ddd; 
+  }
+  .accordion h3:hover {
+    background-color: #a93142;
+  }
+  .accordion h4 {
+    padding: 5px 35px;
+    background-color: #ffc25a;
+    font-size: .9rem;
+    color: #af720a; 
+  }
+  .accordion h4:hover {
+    background-color: #e0b040;
+  }
+  .accordion .desc {
+    padding: 15px 35px;
+    background-color: #ddd;
+    font-family: "Georgia";
+    font-size: .8rem;
+    color: #333;
+    line-height: 1.3rem;
+  }
+  .accordion .opened-for-codepen {
+    display: block;
+  }
+    
+}
+
+
 @media screen and (max-width:1248px) {
   .section06 {
     .container-fluid {

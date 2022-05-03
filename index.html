@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> -->
+  <script src="https://unpkg.com/vue@2.6.11/dist/vue.min.js"></script>
   <title>KAMISMAX</title>
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -20,6 +21,8 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <script src="js/fade-in.js"></script>
+  <script src="https://unpkg.com/bootstrap-vue@2.4.0/dist/bootstrap-vue.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.15.0/dist/bootstrap-vue.min.css">
   <script>
     $(document).scroll(function () {
       var y = $(this).scrollTop();
@@ -30,6 +33,7 @@
       }
     });
   </script>
+
 </head>
 
 <body>
@@ -70,6 +74,7 @@
       <img src="assets/images/pic1-1.png" alt="KAMISMAX" class="img-fluid float-image">
       
     </section>
+    
     <section class="section02 top py-5">
       <div class="info my-5" data-aos="fade-right">
         <p><span>オンライン</span>で学べる<span>一流</span>への道</p>
@@ -104,6 +109,7 @@
         </div>
       </div>
     </section>
+ 
     <section class="section09">
       <div class="sect09-sect text-center"
         style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('assets/images/kmx-img001.jpg');">
@@ -118,7 +124,7 @@
         </div>
       </div>
     </section>
-    <section class="section10">
+    <!-- <section class="section10">
       <div class="sect10-top-strip">
         <h2><span>【美容業界の動画配信市場】</span></h2>
       </div>
@@ -130,7 +136,7 @@
         </div>
         
       </div>
-    </section>
+    </section> -->
     <section class="section09">
       <div class="sect09-sect text-center"
         style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('assets/images/kmx-img002.jpg');">
@@ -163,6 +169,124 @@
         
       </div>
     </section>
+    <section class="section13">
+      <aside class="accordion" id="cutMenu">
+        <h1>MENU (こちらをクリック)</h1>
+        <div class="opened-for-codepen">
+          <h2>［カット技術］　学習メニュー</h2>
+          <!-- ■ショートカットの基本技術をマスターする -->
+          <div class="opened-for-codepen">
+            <h3>■ショートカットの基本技術をマスターする</h3>
+            <div>
+              <section v-for="menu in menus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc">{{menu.text}}</div>
+              </section>
+            </div>
+            <!-- ■ショートカットのデザインをマスターする -->
+            <h3>■ショートカットのデザインをマスターする</h3>
+            <!-- <div>
+              <h4>News Subitem 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4>News Subitem 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              
+              <h4>News Subitem 3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div> -->
+            <div>
+              <section v-for="design in designMenus">
+                <h4><strong>{{design.salon}}:</strong> {{design.stylist}}</h4>
+                <div class="desc">{{design.text}}</div>
+              </section>
+            </div>
+            <h3>■ミディアムのカットを学習する</h3>
+            <div>
+              <section v-for="menu in mediumCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <!-- <p>{{menu.text}}</p> -->
+                <div class="desc">{{menu.text}}</div>
+              </section>
+            </div>
+
+            <h3>■ロングのカットを学習する</h3>
+            <div>
+              <h4>News Subitem 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h4>News Subitem 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              
+              <h4>News Subitem 3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+            
+          </div>
+          
+          <h2>News Item #2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+          <h2>News Item #3</h2>
+          <div>
+            <h3>News Item #3a</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <h3>News Item #3b</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        
+        <!-- <h1>Updates</h1>
+        <div>
+          <h2>Update #1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+          <h2>Update #2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+          <h2>Update #3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+          <h2>Update #4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> -->
+        
+        <!-- <h1>Miscellaneous</h1>
+        <div>
+          <h2>Misc. #1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+          <h2>Misc. #2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+          <h2>Misc. #3</h2>
+          <div>
+            <h3>Misc. Item #1a</h3>
+            <div>
+              <h4>Misc. Subitem 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              
+              <h4>Misc. Subitem 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              
+              <h4>Misc. Subitem 3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <h3>Misc. Item #2a</h3>
+            <div>
+              <h4>Misc. Subitem 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              
+              <h4>Misc. Subitem 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div> -->
+      </aside>
+      
+    </section>
+    
+     
     <section class="section04">
       <div class="columns-wrapper">
         <div class="column">
@@ -257,6 +381,7 @@
         </div>
       </div>
     </section>
+    
     <section class="parallax-bg-bottom">
       <div class="logo">
         <h1><img src="assets/images/kmax-logo@2x.png" alt="KAMISMAX" class="img-fluid"></h1>
@@ -349,9 +474,58 @@
   </div>
 </body>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/test.js"></script>
+<script src="assets/js/cut.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  $(document).ready(function () {
+    $('.accordion-title').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active').next('.accordion-content').slideUp();
+        } else {
+            $(this).siblings('.accordion-title').removeClass('active');
+            var $ct = $(this).siblings('.accordion-content').slideUp();
+            $ct.find('.accordion-title.active').removeClass('active');
+            $ct.find('.accordion-content').slideUp();
+            $(this).addClass('active').next('.accordion-content').slideDown();
+        }
+    });
+});
+</script>
+
+<script src="assets/js/test1.js"></script>
+<script src="assets/js/app2.js"></script>
+<script src="assets/js/app3.js"></script>
+
+<script>
+  var headers = ["H1","H2","H3","H4","H5","H6"];
+
+$(".accordion").click(function(e) {
+  var target = e.target,
+      name = target.nodeName.toUpperCase();
+  
+  if($.inArray(name,headers) > -1) {
+    var subItem = $(target).next();
+    
+    //slideUp all elements (except target) at current depth or greater
+    var depth = $(subItem).parents().length;
+    var allAtDepth = $(".accordion p, .accordion div").filter(function() {
+      if($(this).parents().length >= depth && this !== subItem.get(0)) {
+        return true; 
+      }
+    });
+    $(allAtDepth).slideUp("fast");
+    
+    //slideToggle target content and adjust bottom border if necessary
+    subItem.slideToggle("fast",function() {
+        $(".accordion :visible:last").css("border-radius","0 0 10px 10px");
+    });
+    $(target).css({"border-bottom-right-radius":"0", "border-bottom-left-radius":"0"});
+  }
+});
 </script>
 
 </html>
