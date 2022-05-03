@@ -170,30 +170,21 @@
       </div>
     </section>
     <section class="section13">
-      <aside class="accordion" id="cutMenu">
+      <aside class="accordion">
         <h1>MENU (こちらをクリック)</h1>
         <div class="opened-for-codepen">
-          <h2>［カット技術］　学習メニュー</h2>
+          <h2>カット技術を学ぶ</h2>
           <!-- ■ショートカットの基本技術をマスターする -->
-          <div class="opened-for-codepen">
+          <div class="opened-for-codepen" id="cutMenu">
             <h3>■ショートカットの基本技術をマスターする</h3>
             <div>
               <section v-for="menu in menus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc">{{menu.text}}</div>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
               </section>
             </div>
-            <!-- ■ショートカットのデザインをマスターする -->
+            
             <h3>■ショートカットのデザインをマスターする</h3>
-            <!-- <div>
-              <h4>News Subitem 1</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <h4>News Subitem 2</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              
-              <h4>News Subitem 3</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div> -->
             <div>
               <section v-for="design in designMenus">
                 <h4><strong>{{design.salon}}:</strong> {{design.stylist}}</h4>
@@ -204,84 +195,263 @@
             <div>
               <section v-for="menu in mediumCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <!-- <p>{{menu.text}}</p> -->
-                <div class="desc">{{menu.text}}</div>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
               </section>
             </div>
 
             <h3>■ロングのカットを学習する</h3>
             <div>
-              <h4>News Subitem 1</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <h4>News Subitem 2</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              
-              <h4>News Subitem 3</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <section v-for="menu in longCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
             </div>
+
+            <h3>■カウンセリングを活かしたカット技術を学ぶ</h3>
+            <div>
+              <section v-for="menu in counselingCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+
+            <h3>■似合わせカットを学習する</h3>
+            <div>
+              <section v-for="menu in matchingCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+
+            <h3>■外国人風スタイルのカット技術を理解する</h3>
+            <div>
+              <section v-for="menu in fstyleCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+
+            <h3>■ニュースタンダードなカット技術を学習する</h3>
+            <div>
+              <section v-for="menu in newstandardCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+
+            <h3>■リアリティブなレイヤーカットを学ぶ</h3>
+            <div>
+              <section v-for="menu in layerCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+
+            <h3>■リアリティブなショートカットを学ぶ</h3>
+            <div>
+              <section v-for="menu in shortCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+
+            <h3>■フォルムコントロールを学ぶ</h3>
+            <div>
+              <section v-for="menu in formControls">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+
+            <h3>■骨格を補正するカット技術を学ぶ</h3>
+            <div>
+              <section v-for="menu in structuralCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+
+            <h3>■メンズカットを学習する</h3>
+            <div>
+              <section v-for="menu in mensCuts">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+
             
             
           </div>
           
-          <h2>News Item #2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          <h2>News Item #3</h2>
-          <div>
-            <h3>News Item #3a</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
-            <h3>News Item #3b</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h2>カラー技術を学ぶ</h2>
+          <div id="colorMenu">
+            <h3>■ショートカットの基本技術をマスターする</h3>
+            <div class="colorMenu">
+              <section v-for="menu in colorTechniques">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■デザインカラーを学習する</h3>
+            <div class="colorMenu">
+              <section v-for="menu in designColors">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■ペール系の高明度カラーを学習する</h3>
+            <div class="colorMenu">
+              <section v-for="menu in paleColors">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■外国人風カラーを理解する</h3>
+            <div class="colorMenu">
+              <section v-for="menu in foreignerColors">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
           </div>
+
+          <h2>パーマ技術を学ぶ</h2>
+          <div id="permMenu">
+            <h3>■パーマテクニックを学習する</h3>
+            <div class="permMenu">
+              <section v-for="menu in permTechniques">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■デジタルパーマを学習する</h3>
+            <div class="permMenu">
+              <section v-for="menu in digitalPerms">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■毛髪診断からデジタルパーマ提案を学習する</h3>
+            <div class="permMenu">
+              <section v-for="menu in checkupPermMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■外国人風パーマを理解する</h3>
+            <div class="permMenu">
+              <section v-for="menu in foreignerPermMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■メンズパーマを学習する</h3>
+            <div class="permMenu">
+              <section v-for="menu in mensPermMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+          </div>
+
+          <h2>ブロー技術を学ぶ</h2>
+          <div id="blowMenu">
+            <h3>■ブロー技術をマスターする</h3>
+            <div class="blowMenu">
+              <section v-for="menu in blowMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+          </div>
+
+          <h2>創作・撮影を学ぶ</h2>
+          <div id="creativeMenu">
+            <h3>■クリエイティブワークを理解する</h3>
+            <div class="creativeMenu">
+              <section v-for="menu in creativeMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+          </div>
+
+          <h2>メイク技術を学ぶ</h2>
+          <div id="makeMenu">
+            <h3>■撮影現場で通用するヘアメイクを学習する</h3>
+            <div class="makeMenu">
+              <section v-for="menu in locationMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■サロンスタイルのヘアメイクを学習する</h3>
+            <div class="makeMenu">
+              <section v-for="menu in salonstyleMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+          </div>
+
+          <h2>考え方を学ぶ</h2>
+          <div id="thoughtMenu">
+            <h3>■クリエイティブワークを理解する</h3>
+            <div class="thoughtMenu">
+              <section v-for="menu in threeStarJobMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■三つ星美容師のヒストリーを学ぶ</h3>
+            <div class="thoughtMenu">
+              <section v-for="menu in threeStarHistoryMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■本音トークを楽しむ</h3>
+            <div class="thoughtMenu">
+              <section v-for="menu in realTalkMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+          </div>
+
+          
+          <h2>マネジメントを学ぶ</h2>
+          <div id="managementMenu">
+            <h3>■サロンマネジメントを学ぶ</h3>
+            <div class="managementMenu">
+              <section v-for="menu in salonManagementMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+            <h3>■セルフマネジメントを学ぶ</h3>
+            <div class="managementMenu">
+              <section v-for="menu in selfManagementMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+          </div>
+
+          <!-- <h2>メニュー名</h2>
+          <div id="****Menu">
+            <h3>下層メニュー名</h3>
+            <div class="****Menu">
+              <section v-for="menu in ****Menus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+              </section>
+            </div>
+          </div> -->
         </div>
         
-        <!-- <h1>Updates</h1>
-        <div>
-          <h2>Update #1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       
         
-          <h2>Update #2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          <h2>Update #3</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
-          <h2>Update #4</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div> -->
-        
-        <!-- <h1>Miscellaneous</h1>
-        <div>
-          <h2>Misc. #1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        
-          <h2>Misc. #2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          <h2>Misc. #3</h2>
-          <div>
-            <h3>Misc. Item #1a</h3>
-            <div>
-              <h4>Misc. Subitem 1</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              
-              <h4>Misc. Subitem 2</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              
-              <h4>Misc. Subitem 3</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <h3>Misc. Item #2a</h3>
-            <div>
-              <h4>Misc. Subitem 1</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              
-              <h4>Misc. Subitem 2</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-          </div>
-        </div> -->
       </aside>
       
     </section>
@@ -480,7 +650,7 @@
 <script>
   AOS.init();
 </script>
-<script>
+<!-- <script>
   $(document).ready(function () {
     $('.accordion-title').click(function () {
         if ($(this).hasClass('active')) {
@@ -494,11 +664,18 @@
         }
     });
 });
-</script>
+</script> -->
 
 <script src="assets/js/test1.js"></script>
 <script src="assets/js/app2.js"></script>
 <script src="assets/js/app3.js"></script>
+<script src="assets/js/color.js"></script>
+<script src="assets/js/perm.js"></script>
+<script src="assets/js/blow.js"></script>
+<script src="assets/js/creative.js"></script>
+<script src="assets/js/make.js"></script>
+<script src="assets/js/thought.js"></script>
+<script src="assets/js/management.js"></script>
 
 <script>
   var headers = ["H1","H2","H3","H4","H5","H6"];

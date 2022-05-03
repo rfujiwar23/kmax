@@ -730,84 +730,6 @@ body.modal-open {
   color: #b91313;
 }
 
-.section12 .accordion {
-  width: 100%;
-  max-width: 560px;
-  margin: 20px auto;
-}
-.section12 .accordion h1 {
-  cursor: pointer;
-  padding: 15px 20px;
-  background-color: #333;
-  font-family: Lobster;
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: #1abc9c;
-}
-.section12 .accordion h1:hover {
-  color: #4afcdc;
-}
-.section12 .accordion h1:first-child {
-  border-radius: 10px 10px 0 0;
-}
-.section12 .accordion h1:last-of-type {
-  border-radius: 0 0 10px 10px;
-}
-.section12 .accordion h1:not(:last-of-type) {
-  border-bottom: 1px dotted #1abc9c;
-}
-.section12 .accordion h2 {
-  padding: 5px 25px;
-  background-color: #1abc9c;
-  font-size: 1.1rem;
-  color: #333;
-}
-.section12 .accordion h2:hover {
-  background-color: #09ab8b;
-}
-.section12 .accordion div {
-  display: none;
-}
-.section12 .accordion p {
-  display: none;
-  padding: 15px 35px;
-  background-color: #ddd;
-  font-family: "Georgia";
-  font-size: 0.8rem;
-  color: #333;
-  line-height: 1.3rem;
-}
-.section12 .accordion h3 {
-  padding: 5px 30px;
-  background-color: #b94152;
-  font-size: 0.9rem;
-  color: #ddd;
-}
-.section12 .accordion h3:hover {
-  background-color: #a93142;
-}
-.section12 .accordion h4 {
-  padding: 5px 35px;
-  background-color: #ffc25a;
-  font-size: 0.9rem;
-  color: #af720a;
-}
-.section12 .accordion h4:hover {
-  background-color: #e0b040;
-}
-.section12 .accordion .opened-for-codepen {
-  display: block;
-}
-.section12 h2 {
-  cursor: pointer;
-}
-.section12 h3 {
-  cursor: pointer;
-}
-.section12 h4 {
-  cursor: pointer;
-}
-
 .section13 * {
   margin: 0;
   padding: 0;
@@ -838,7 +760,7 @@ body.modal-open {
   border-radius: 10px 10px 0 0;
 }
 .section13 .accordion h1:last-of-type {
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0;
 }
 .section13 .accordion h1:not(:last-of-type) {
   border-bottom: 1px dotted #1abc9c;
@@ -848,38 +770,38 @@ body.modal-open {
 }
 .section13 .accordion h2 {
   padding: 10px 25px;
-  background-color: #d78006;
+  background-color: #cf0d85;
   border-bottom: 1px dotted #676e72;
   font-size: 1.1rem;
   color: #fff;
 }
 .section13 .accordion h2:hover {
-  background-color: #ab4409;
+  background-color: #e652ad;
 }
 .section13 .accordion h3 {
-  padding: 5px 30px;
-  background-color: #b94152;
+  padding: 10px 30px;
+  background-color: #fb7a8c;
   font-size: 0.9rem;
-  color: #ddd;
+  color: #000;
 }
 .section13 .accordion h3:hover {
-  background-color: #a93142;
+  background-color: #fd95a3;
 }
 .section13 .accordion h4 {
-  padding: 5px 35px;
-  background-color: #ffc25a;
+  padding: 15px 35px;
+  background-color: #ef9056;
   font-size: 0.9rem;
-  color: #af720a;
+  color: #fff;
 }
 .section13 .accordion h4:hover {
-  background-color: #e0b040;
+  background-color: #ff8336;
 }
 .section13 .accordion .desc {
   padding: 15px 35px;
-  background-color: #ddd;
+  background-color: white;
   font-family: "Georgia";
   font-size: 0.8rem;
-  color: #333;
+  color: #000;
   line-height: 1.3rem;
 }
 .section13 .accordion .opened-for-codepen {
