@@ -910,12 +910,36 @@ body.modal-open {
     background-color: rgb(255, 131, 54);
   }
   .accordion .desc {
-    padding: 15px 35px;
+    padding: 15px 10px;
     background-color: rgb(255, 255, 255);
-    font-family: "Georgia";
     font-size: .8rem;
     color: #000;
     line-height: 1.3rem;
+    text-align: center;
+  }
+  .accordion .desc a {
+    text-decoration: none;
+    font-size: 16px;
+    color:#000;
+    line-height: 2em;
+  }
+
+  .accordion .desc a strong {
+    font-size: 1.25em;
+    padding-right:5px;
+  }
+  .accordion .desc a span {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .accordion .desc a em {
+    font-size: 1.5em;
+    font-style: normal;
+    color:#F16821;
+    background:#000;
+    line-height: 3em;
+    padding:5px 10px;
   }
   .accordion .opened-for-codepen {
     display: block;

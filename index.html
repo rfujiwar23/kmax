@@ -180,22 +180,46 @@
             <div>
               <section v-for="menu in menus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             
             <h3>■ショートカットのデザインをマスターする</h3>
             <div>
-              <section v-for="design in designMenus">
-                <h4><strong>{{design.salon}}:</strong> {{design.stylist}}</h4>
-                <div class="desc">{{design.text}}</div>
+              <section v-for="menu in designMenus">
+                <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■ミディアムのカットを学習する</h3>
             <div>
               <section v-for="menu in mediumCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -203,7 +227,15 @@
             <div>
               <section v-for="menu in longCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -211,7 +243,15 @@
             <div>
               <section v-for="menu in counselingCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -219,7 +259,15 @@
             <div>
               <section v-for="menu in matchingCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -227,7 +275,15 @@
             <div>
               <section v-for="menu in fstyleCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -235,7 +291,15 @@
             <div>
               <section v-for="menu in newstandardCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -243,7 +307,15 @@
             <div>
               <section v-for="menu in layerCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -251,7 +323,15 @@
             <div>
               <section v-for="menu in shortCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -259,7 +339,15 @@
             <div>
               <section v-for="menu in formControls">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -267,7 +355,15 @@
             <div>
               <section v-for="menu in structuralCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -275,7 +371,15 @@
             <div>
               <section v-for="menu in mensCuts">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
 
@@ -289,28 +393,60 @@
             <div class="colorMenu">
               <section v-for="menu in colorTechniques">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■デザインカラーを学習する</h3>
             <div class="colorMenu">
               <section v-for="menu in designColors">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■ペール系の高明度カラーを学習する</h3>
             <div class="colorMenu">
               <section v-for="menu in paleColors">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■外国人風カラーを理解する</h3>
             <div class="colorMenu">
               <section v-for="menu in foreignerColors">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
           </div>
@@ -321,35 +457,75 @@
             <div class="permMenu">
               <section v-for="menu in permTechniques">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■デジタルパーマを学習する</h3>
             <div class="permMenu">
               <section v-for="menu in digitalPerms">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■毛髪診断からデジタルパーマ提案を学習する</h3>
             <div class="permMenu">
               <section v-for="menu in checkupPermMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■外国人風パーマを理解する</h3>
             <div class="permMenu">
               <section v-for="menu in foreignerPermMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■メンズパーマを学習する</h3>
             <div class="permMenu">
               <section v-for="menu in mensPermMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
           </div>
@@ -360,7 +536,15 @@
             <div class="blowMenu">
               <section v-for="menu in blowMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
           </div>
@@ -371,7 +555,15 @@
             <div class="creativeMenu">
               <section v-for="menu in creativeMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
           </div>
@@ -382,14 +574,30 @@
             <div class="makeMenu">
               <section v-for="menu in locationMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■サロンスタイルのヘアメイクを学習する</h3>
             <div class="makeMenu">
               <section v-for="menu in salonstyleMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
           </div>
@@ -400,21 +608,45 @@
             <div class="thoughtMenu">
               <section v-for="menu in threeStarJobMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■三つ星美容師のヒストリーを学ぶ</h3>
             <div class="thoughtMenu">
               <section v-for="menu in threeStarHistoryMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■本音トークを楽しむ</h3>
             <div class="thoughtMenu">
               <section v-for="menu in realTalkMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
           </div>
@@ -426,14 +658,30 @@
             <div class="managementMenu">
               <section v-for="menu in salonManagementMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
             <h3>■セルフマネジメントを学ぶ</h3>
             <div class="managementMenu">
               <section v-for="menu in selfManagementMenus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
           </div>
@@ -444,7 +692,15 @@
             <div class="****Menu">
               <section v-for="menu in ****Menus">
                 <h4><strong>{{menu.salon}}:</strong> {{menu.stylist}}</h4>
-                <div class="desc"><a v-bind:href="menu.url">{{menu.text}}</a></div>
+                <div class="desc">
+                  <a v-bind:href="menu.url">
+                    <img :src="menu.imgBefore" alt="ビフォア" class="img-fluid">
+                    <img :src="menu.imgAfter" alt="After" class="img-fluid">
+                    <br>
+                    <strong>{{menu.id}}.</strong><span v-html="menu.text"></span><br>
+                    <em>{{menu.stylist}}</em>
+                  </a>
+                </div>
               </section>
             </div>
           </div> -->

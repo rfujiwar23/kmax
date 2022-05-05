@@ -797,12 +797,34 @@ body.modal-open {
   background-color: #ff8336;
 }
 .section13 .accordion .desc {
-  padding: 15px 35px;
+  padding: 15px 10px;
   background-color: white;
-  font-family: "Georgia";
   font-size: 0.8rem;
   color: #000;
   line-height: 1.3rem;
+  text-align: center;
+}
+.section13 .accordion .desc a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  line-height: 2em;
+}
+.section13 .accordion .desc a strong {
+  font-size: 1.25em;
+  padding-right: 5px;
+}
+.section13 .accordion .desc a span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.section13 .accordion .desc a em {
+  font-size: 1.5em;
+  font-style: normal;
+  color: #F16821;
+  background: #000;
+  line-height: 3em;
+  padding: 5px 10px;
 }
 .section13 .accordion .opened-for-codepen {
   display: block;

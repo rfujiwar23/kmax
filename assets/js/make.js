@@ -20,8 +20,8 @@ var vm = new Vue({
         salon: "SYAN",
         stylist: "野々口 祐子",
         text: "スマホ撮影で可愛く見せるカットとヘアメイク",
-        imgBefore: "#",
-        imgAfter: "#",
+        imgBefore: "assets/images/before-after/kmax_before&after_62-after.png",
+        imgAfter: "assets/images/before-after/kmax_before&after_62-before.png",
         url: "#",
       },
       {
